@@ -1,0 +1,9 @@
+Estimator or summary,Groups,Concordant,R (95% interval where applicable),Ties / notes
+Primary: Hap1 extremes for n≥3,388,193,49.74% (Wilson 44.79–54.70%); position-cluster 44.79–54.76%,"No within-group score ties, zero contrasts, endpoint ties, or tie-break ambiguities; conditional tie-adjusted benchmark 50.00%"
+"Primary, size 2",341,171,50.15%,Same two exact HGVS keys in both assays; no zero contrasts
+"Primary, size 3",47,22,46.81%,Hap1 minimum and maximum define pair; same pair read in mES
+Fixed first two lexicographic HGVS keys,388,196,50.52%,Pair selection independent of scores
+Reverse mES-extreme selection for n≥3,388,193,49.74%,n=2 pair ordering unchanged; no endpoint ties
+"Pooled covariance ratio, Φ",388,—,87.51% (ordinary group-bootstrap 76.80–98.66%),Main estimate; not a noise fraction
+"Within-assay fractional-rank covariance ratio, Φ",388,—,95.985%,Rank-scale sensitivity; average ranks for ties
+"Class-control remapping/restandardization, Φ",388,—,87.59%,"Separate sensitivity, not the primary estimate"

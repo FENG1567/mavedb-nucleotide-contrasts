@@ -1,0 +1,8 @@
+Dataset / rule,Mean or observed R,Mean / observed selected groups,Empirical 2.5th–97.5th percentile,Aggregation and interpretation
+"Gaussian null, A: evaluation-dependent",99.94%,96.063 per dataset,98.97–100.00%,"Mean over 1,000 null datasets; size-two groups are selected to have same-sign contrasts"
+"Gaussian null, B: fixed threshold",50.02%,22.935 per dataset,30.43–70.83%,"Mean over 1,000 null datasets; threshold uses known σ²"
+"Gaussian null, C: cross-fitted threshold",49.61%,11.631 per dataset,20.00–80.00%,"Mean over 1,000 null datasets; threshold estimated on a random half of groups"
+"BRCA2 data, A: evaluation-dependent",100.00%,77,—,Conditional result under rule A
+"BRCA2 data, B: fixed laboratory variance",56.06%,66,—,Uses σ²=0.064295; physical calibration provenance not independently verified
+"BRCA2 data, B: fixed technical variance",50.46%,327,—,Uses σ²=0.001005; physical calibration provenance not independently verified
+"BRCA2 data, C: position cross-fitting",61.03%,11.696 per nonempty split,37.50–81.82%,"All 2,000 splits nonempty; equal-split mean R; MCSE 0.002506; percentiles describe split variation, not a sampling CI"

@@ -1,0 +1,37 @@
+{
+  "release_note": "Excerpt of original phaseA summary; only fields consumed by current BRCA2 direction analysis retained.",
+  "original_full_file_sha256": "3fcb40af89c4a362ad426d7a2fc65f59e13f40f8c0680bf2e82012bb267827f5",
+  "holdout": {
+    "replication": {
+      "all": {
+        "k": 193,
+        "n": 388,
+        "R": 0.49742268041237114,
+        "ci_low": 0.44794202126196464,
+        "ci_high": 0.5469538736083247,
+        "binom_p_gt_50": 0.560512948962249
+      },
+      "n2": {
+        "k": 171,
+        "n": 341,
+        "R": 0.501466275659824,
+        "ci_low": 0.4486775822201764,
+        "ci_high": 0.554222301115835,
+        "binom_p_gt_50": 0.5000000000000006
+      },
+      "n3": {
+        "k": 22,
+        "n": 47,
+        "R": 0.46808510638297873,
+        "ci_low": 0.33331687076560745,
+        "ci_high": 0.6076761677980519,
+        "binom_p_gt_50": 0.7199676852098946
+      }
+    },
+    "phi_A_ci": [
+      0.7680030167919542,
+      0.9866439551126508
+    ],
+    "phi_A": 0.8750878921486126
+  }
+}

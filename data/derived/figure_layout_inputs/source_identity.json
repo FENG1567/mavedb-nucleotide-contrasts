@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "input_sha256": {
+    "figure1_collection_scope.csv": "d5acd85a9f4de95a4f956bd08d234366f558db21b40f20029452d25944a15014",
+    "figure1_full_group_states.csv": "3605f363177d02e1a706cb1fbbbd7e2378575e11a366620266b08f65e648c224",
+    "figure1_group_size_distribution.csv": "9ee10f7599156d1676cf8717b2eb5f83968cc97326a5823a2d56360373e9dcb6",
+    "figure1_qualified_group_counts.csv": "ff2c6dfd8f9c15fc80cfb597928380956fb8278d3932c6b7a336e74ee994481c",
+    "figure2_brca2_scatter_points.csv": "857c7aeab72887ea34a5b0b004c363ebf66b87cfaf94f26432335c8c6ad629fe",
+    "figure2_direction_interval_points.csv": "c14d1934f5d3ca0f8abab416195119a920cfb2bf24cfafa008ed1e2666a240c4",
+    "figure2_phi_estimates.csv": "622c7e97b4bc75d4b89bbc713169ea68ac294ab026f777c149e3b79344a87093",
+    "figure3_msh2_all_endpoint_metrics.csv": "4534bf3f5e0ce1f45e7bc279f6eadb34e2bdb2432821caaee049fdbf7067d5f6",
+    "figure3_msh2_attrition.csv": "8457d218418b5ebe9245303d50669ed3f8473bb49a20a3b062cefc2df7255513",
+    "figure4_null_simulation_tau0.csv": "0d06149ddb9eda3f199a62c9f3d507a34a7d1fb7280457ef1e9558bab9f0a716",
+    "figure4_observed_workflows.csv": "94efe6c4e4cee2d96092027c1a32e87557b1f926e3026dd2ad9c469558f23f23",
+    "supplementary_s1_sensitivity_and_primary.csv": "e8e0b7322009df856a6ac1d2b15c1c8371c48da86608a0023a6d232bf31a8c47",
+    "supplementary_s2_covariance_points.csv": "4da66b8ac77354632070249b428b81ae277036e8b93a79ce840868a719d0311a"
+  },
+  "pdf_sha256": {
+    "Supplementary_Figure_S1_MSH2_sensitivity.pdf": "32dec67848d5bb967874fa8b8ff8b130932155433657bfc71a0102da0bfff1e4",
+    "Supplementary_Figure_S2_RNA_cross_repeat_checks.pdf": "05d2a7dfb4bc70e33b187c39ea50e23a9d2171e9f7f0593ec6fea419269f9c96",
+    "Supplementary_Figure_S3_collection_detail.pdf": "ebcda1a4c38586491e17d94ef5898f8b4c8f49f997e9ab5c1e0243e79acf2411",
+    "figure1_collection_testability.pdf": "bb9f0d311aff10a87c503c57b711222203efa799091922f96235bf837ca56c28",
+    "figure2_brca2_paired_contrasts.pdf": "ea6963c664050ffcce606e83f7a7f5d29408bb66216515fee4db27d87ee81cbf",
+    "figure3_msh2_controlled_endpoints.pdf": "7c9a6ac7811746bce097fb148eb2d284a4f287db540b670437e5f77eef155910",
+    "figure4_structural_selection_counterexample.pdf": "fe002ed3336c443c43e54ba0cda63be9668c43f999a097d491b2811a6d6d6ffe"
+  },
+  "scientific_changes": false,
+  "omitted_data_rows": 0,
+  "caption_edits": 10,
+  "panel_labels": "uppercase Arial Bold 18 pt",
+  "body_weight": "Arial Bold",
+  "text_min_pt": 9.5,
+  "standalone_width_inches": 7.2,
+  "figure2_group_sizes": [
+    2,
+    3
+  ],
+  "note": "Reader-facing labels and caption definitions clarified; values and uncertainty unchanged."
+}

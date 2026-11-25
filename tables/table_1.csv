@@ -1,0 +1,15 @@
+Evidence tier or retained quantity,Count,Denominator / unit,Interpretation
+MaveDB score sets in frozen manifest,92,score sets,Frozen collection scope
+Score sets with analyzable missense records,89,92 score sets,Three sets had no analyzable missense records
+Numeric missense rows,"413,090",rows,Historical denominator
+Historical group-key entries in eligible groups,"31,723 (7.7%)","within-score-set group-key entries / 413,090 rows",Historical nominal key-to-row ratio; retains original key rule and does not globally deduplicate across score sets
+Historical sequence-supported keys,"24,810 (78.21%)","keys / 31,723 historical keys",Historical mixed-tier support fraction; not the new group-level estimate
+Historical same-amino-acid groups with ≥2 keys,"13,041",within-score-set groups,No cross-score-set deduplication
+Score sets with ≥1 historical multi-key group,27,92 score sets,Historical key-level audit
+Accession/reference-compatible groups with ≥2 distinct nucleotide identities,"3,836","19 score sets; 13,041 historical groups","Submitted NT SNV, pinned CDS, reference base, translation, and available p annotation checks"
+Versioned-request-supported groups with ≥2 identities,"2,679","13 score sets; 13,041 historical groups",Narrower request tier; returned FASTA accession/version was not independently verified
+Conditional target-sequence-compatible groups with ≥2 identities,"1,013","7 score sets; 13,041 historical groups",Excludes TPK1; relies on the explicit c.1-to-target-base-1 assumption
+Reference-qualified groups with ≥2 source-scored nucleotide identities,"3,836",19 score sets; same groups as accession/reference tier,"Intersection with first tier, not an independent group count; source score does not prove independent physical measurements"
+Broad raw source-score trace,"31,723 group-key pairs; 13,041 groups (10,567 non-TPK1)",27 score sets (26 non-TPK1),Nucleotide-key scores regardless of reference qualification
+Historical TPK1 keys unresolved for full-construct qualification,"6,913",keys,Conditional local matches are not used to qualify complete constructs
+Raw-to-mapped numeric records reconciled,"31,723 / 31,723",group-key pairs in 27 score sets,Exact numeric record multiset match in the audited source/mapped tables

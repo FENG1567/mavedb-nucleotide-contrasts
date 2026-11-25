@@ -1,0 +1,4 @@
+tier,qualified_groups,all_historical_groups,sets_with_qualified_groups,eligible_state
+Accession reference,3836,13041,19,ge2
+Versioned request,2679,13041,13,ge2
+Conditional target sequence,1013,13041,7,conditional_ge2

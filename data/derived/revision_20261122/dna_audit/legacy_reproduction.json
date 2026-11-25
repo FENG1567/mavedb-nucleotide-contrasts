@@ -1,0 +1,27 @@
+{
+  "expected": {
+    "manifest_score_sets": 92,
+    "mapping_status_ok_score_sets": 92,
+    "legacy_analyzable_score_sets": 89,
+    "missense_rows": 413090,
+    "unique_keys_in_ge2_groups": 31723
+  },
+  "observed": {
+    "manifest_score_sets": 92,
+    "mapping_status_ok_score_sets": 92,
+    "legacy_analyzable_score_sets": 89,
+    "missense_rows": 413090,
+    "unique_keys_in_ge2_groups": 31723,
+    "groups_ge2": 13041,
+    "fraction_keys_over_rows": 0.07679440315669708,
+    "group_size_distribution": {
+      "2": 9100,
+      "3": 2682,
+      "4": 875,
+      "5": 327,
+      "6": 57
+    },
+    "matches_saved_audit_per_set": true,
+    "matches_expected_prior_figures": true
+  }
+}

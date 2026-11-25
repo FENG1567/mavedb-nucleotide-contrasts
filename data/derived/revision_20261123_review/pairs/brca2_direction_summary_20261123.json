@@ -1,0 +1,276 @@
+{
+  "chance_benchmark_definition": "For each method, conditional on one assay and the selected pair under that method, uniformly reassign the other assay’s observed scores over the group’s variant keys. The exact expected concordance is 0.5 times the probability that the selected endpoints receive unequal scores, with all observed tie multiplicities preserved. This is a conditional exchangeability benchmark, not a p-value or proof that variants are exchangeable.",
+  "diagnostics": {
+    "primary_extreme_tie_break_ambiguity_groups_all": 0,
+    "primary_extreme_tie_break_ambiguity_groups_n3plus": 0,
+    "primary_tie_break_R_min_max_all": [
+      0.49742268041237114,
+      0.49742268041237114
+    ],
+    "reverse_tie_break_R_min_max_all": [
+      0.49742268041237114,
+      0.49742268041237114
+    ],
+    "reverse_tie_break_ambiguity_groups_all": 0,
+    "reverse_tie_break_ambiguity_groups_n3plus": 0
+  },
+  "estimators": {
+    "fixed_first_two_HGVS_keys": {
+      "all": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.5051546391752577,
+        "R_minus_tie_adjusted_expected_R": 0.005154639175257714,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 196,
+        "either_selected_axis_zero": 0,
+        "groups": 388,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.45523721391988115,
+            0.5544041450777202
+          ],
+          "n_positions": 367
+        },
+        "protein_positions": 367,
+        "tie_adjusted_expected_R": 0.5
+      },
+      "n2": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.501466275659824,
+        "R_minus_tie_adjusted_expected_R": 0.0014662756598240456,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 171,
+        "either_selected_axis_zero": 0,
+        "groups": 341,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.4489721108384703,
+            0.5548961424332344
+          ],
+          "n_positions": 330
+        },
+        "protein_positions": 330,
+        "tie_adjusted_expected_R": 0.5
+      },
+      "n3plus": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.5319148936170213,
+        "R_minus_tie_adjusted_expected_R": 0.03191489361702127,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 25,
+        "either_selected_axis_zero": 0,
+        "groups": 47,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.3829787234042553,
+            0.6808510638297872
+          ],
+          "n_positions": 47
+        },
+        "protein_positions": 47,
+        "tie_adjusted_expected_R": 0.5
+      }
+    },
+    "primary_Hap1_extremes": {
+      "all": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.49742268041237114,
+        "R_minus_tie_adjusted_expected_R": -0.002577319587628857,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 193,
+        "either_selected_axis_zero": 0,
+        "groups": 388,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.4479146787531807,
+            0.5475639850408188
+          ],
+          "n_positions": 367
+        },
+        "protein_positions": 367,
+        "tie_adjusted_expected_R": 0.5
+      },
+      "n2": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.501466275659824,
+        "R_minus_tie_adjusted_expected_R": 0.0014662756598240456,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 171,
+        "either_selected_axis_zero": 0,
+        "groups": 341,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.44807121661721067,
+            0.5561963917262077
+          ],
+          "n_positions": 330
+        },
+        "protein_positions": 330,
+        "tie_adjusted_expected_R": 0.5
+      },
+      "n3plus": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.46808510638297873,
+        "R_minus_tie_adjusted_expected_R": -0.03191489361702127,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 22,
+        "either_selected_axis_zero": 0,
+        "groups": 47,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.3398936170212768,
+            0.6170212765957447
+          ],
+          "n_positions": 47
+        },
+        "protein_positions": 47,
+        "tie_adjusted_expected_R": 0.5
+      }
+    },
+    "reverse_mES_extremes": {
+      "all": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.49742268041237114,
+        "R_minus_tie_adjusted_expected_R": -0.002577319587628857,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 193,
+        "either_selected_axis_zero": 0,
+        "groups": 388,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.4487155388471178,
+            0.5463917525773195
+          ],
+          "n_positions": 367
+        },
+        "protein_positions": 367,
+        "tie_adjusted_expected_R": 0.5
+      },
+      "n2": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.501466275659824,
+        "R_minus_tie_adjusted_expected_R": 0.0014662756598240456,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 171,
+        "either_selected_axis_zero": 0,
+        "groups": 341,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.4489795918367347,
+            0.554292878213232
+          ],
+          "n_positions": 330
+        },
+        "protein_positions": 330,
+        "tie_adjusted_expected_R": 0.5
+      },
+      "n3plus": {
+        "Hap1_selected_difference_zero": 0,
+        "R": 0.46808510638297873,
+        "R_minus_tie_adjusted_expected_R": -0.03191489361702127,
+        "any_Hap1_score_ties_within_group": 0,
+        "any_mES_score_ties_within_group": 0,
+        "both_selected_axes_zero": 0,
+        "concordant": 22,
+        "either_selected_axis_zero": 0,
+        "groups": 47,
+        "groups_with_score_extreme_endpoint_ties": 0,
+        "groups_with_tie_break_sign_ambiguity": 0,
+        "mES_selected_difference_zero": 0,
+        "position_cluster_bootstrap_95": {
+          "ci95_percentile": [
+            0.3404255319148936,
+            0.6170212765957447
+          ],
+          "n_positions": 47
+        },
+        "protein_positions": 47,
+        "tie_adjusted_expected_R": 0.5
+      }
+    }
+  },
+  "group_universe": {
+    "group_size_counts": {
+      "2": 341,
+      "3": 47
+    },
+    "groups": 388,
+    "protein_positions": 367,
+    "shared_HGVS_variants": 823
+  },
+  "position_cluster_bootstrap": "For new sensitivity estimators, resample observed protein-position clusters with replacement (same number of nonempty positions for the estimator), retain every group within each selected position, 5,000 draws, seed 20261123 + method index. Percentile 95% intervals; descriptive dependence-robust intervals.",
+  "preserved_primary": {
+    "Phi_A": 0.8750878921486126,
+    "Phi_A_original_group_bootstrap_CI95": [
+      0.7680030167919542,
+      0.9866439551126508
+    ],
+    "existing_position_cluster_R_CI95": [
+      0.4490861618798956,
+      0.5473731565417399
+    ],
+    "primary_R_reconstructed": 0.49742268041237114,
+    "primary_R_reconstruction_matches_phaseA": true
+  },
+  "selected_pair_notes": {
+    "fixed_first_two_HGVS_keys": "Uses the first two shared exact HGVS keys sorted lexicographically in every group, independent of scores; this matches the fixed key order already used by the two-variant estimator.",
+    "primary_Hap1_extremes": "Matches run_phaseA.py: n=2 uses sorted-HGVS variants 0 minus 1; n>=3 uses np.argsort(Hap1 z) extrema and reads mES values for the same two variants.",
+    "reverse_mES_extremes": "Sensitivity reverses the data-dependent selection source for n>=3; n=2 pair ordering remains the same."
+  },
+  "source_files": {
+    "holdout_paired_groups": {
+      "path": "data/derived/work/holdout_paired_groups.csv",
+      "sha256": "ec57afacf9fe0ac22c8dd45919bd2930b19e4f888abb6f21dab3ccf18c03b11b"
+    },
+    "mapped_1225": {
+      "path": "data/derived/work/mapped_BRCA2_00001225-a-1.csv",
+      "sha256": "6949d264470fe432af77cbccf0b70eae1ad6e4c10c39ab16fbdff418231e9da7"
+    },
+    "mapped_1242": {
+      "path": "data/derived/work/mapped_BRCA2_00001242-a-1.csv",
+      "sha256": "02be45f5afbe9f78b4ef14ae40dee46aba5aa240a3d523d54c6efec36d2709d6"
+    }
+  },
+  "tie_definitions": "Exact equality of the exported score values (equality is invariant under per-assay z-scoring); tied variant-pair count is the number of within-group unordered pairs having equal exported score.",
+  "reporting_correction": "The original diagnostics range used only the size-three concordant numerator over all 388 groups. Both assays have zero tie-break ambiguity; the complete-cohort attainable R range is the corresponding primary/reverse R point. Estimator results, bootstrap intervals and Phi were not refit or changed."
+}

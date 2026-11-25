@@ -1,0 +1,69 @@
+{
+  "fixed_workflows": {
+    "A_validation_dependent": {
+      "n_groups": 77,
+      "n_positions": 76,
+      "n_concordant": 77,
+      "R": 1.0,
+      "n2": 69,
+      "n3": 8,
+      "n2_concordant": 69,
+      "n3_concordant": 8
+    },
+    "B_external_lab": {
+      "n_groups": 66,
+      "n_positions": 65,
+      "n_concordant": 37,
+      "R": 0.5606060606060606,
+      "n2": 56,
+      "n3": 10,
+      "n2_concordant": 33,
+      "n3_concordant": 4
+    },
+    "B_external_tech": {
+      "n_groups": 327,
+      "n_positions": 313,
+      "n_concordant": 165,
+      "R": 0.5045871559633027,
+      "n2": 282,
+      "n3": 45,
+      "n2_concordant": 144,
+      "n3_concordant": 21
+    }
+  },
+  "position_split_workflow": {
+    "attempted_splits": 2000,
+    "nonempty_splits": 2000,
+    "empty_splits": 0,
+    "mean_selected_groups_conditional_nonempty": 11.6955,
+    "mean_R_equal_nonempty_split_weight": 0.6103123414828691,
+    "split_distribution_2p5_97p5": [
+      0.375,
+      0.8181818181818182
+    ],
+    "MCSE_of_conditional_split_mean_R": 0.0025060634016484573,
+    "pooled_selection_event_R_different_weighting": 0.6120730195374289,
+    "interval_interpretation": "Random-position-split distribution; not a sampling confidence interval.",
+    "training_rule": "Half positions; threshold from training mean noise_var; evaluated on remaining positions."
+  },
+  "checks": {
+    "A_validation_dependent": true,
+    "B_external_lab": true,
+    "B_external_tech": true,
+    "C_mean_reproduced": true,
+    "C_mean_count_reproduced": true,
+    "C_split_spread_reproduced": true
+  },
+  "scope": "Rule-specific analyzed populations; no matched-selection-rate or method-performance comparison.",
+  "fixed_variance_constants": {
+    "lab_variance_constant": 0.064295,
+    "technical_variance_constant": 0.001005
+  },
+  "variance_boundary": "Values are fixed comparator constants; physical calibration is not established by this verification.",
+  "source_hashes": {
+    "holdout_paired_groups.csv": "ec57afacf9fe0ac22c8dd45919bd2930b19e4f888abb6f21dab3ccf18c03b11b",
+    "real_workflow_comparison.csv": "94efe6c4e4cee2d96092027c1a32e87557b1f926e3026dd2ad9c469558f23f23",
+    "real_workflow_comparison.py": "35e7283228ed7ed963b879e2b49a0ac6117985965aa3e42d199e161f3d69af1b",
+    "audit_real_selection.py": "6e19e1307d68cbc7c902853970c391195585a92a8f03522f8a7eeb0367251374"
+  }
+}

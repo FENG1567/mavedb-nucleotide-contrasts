@@ -1,0 +1,236 @@
+variation_id,dna_c_hgvs,gene,protein_pos,trait_name_current_ClinVar,contains_pancreatic_term
+52808,c.92G>A,BRCA2,31,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+224451,c.92G>T,BRCA2,31,Breast and/or ovarian cancer,False
+224451,c.92G>T,BRCA2,31,Breast neoplasm,False
+224451,c.92G>T,BRCA2,31,Hereditary cancer-predisposing syndrome,False
+224451,c.92G>T,BRCA2,31,Malignant tumor of pancreas,True
+51167,c.164A>G,BRCA2,55,Familial pancreatic carcinoma,True
+51167,c.164A>G,BRCA2,55,Hereditary breast ovarian cancer syndrome,False
+51167,c.164A>G,BRCA2,55,Hereditary cancer-predisposing syndrome,False
+51167,c.164A>G,BRCA2,55,not provided,False
+37845,c.353G>A,BRCA2,118,BRCA2-related disorder,False
+37845,c.353G>A,BRCA2,118,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+37845,c.353G>A,BRCA2,118,Familial cancer of breast,False
+37845,c.353G>A,BRCA2,118,Familial prostate cancer,False
+37845,c.353G>A,BRCA2,118,Hereditary breast ovarian cancer syndrome,False
+37845,c.353G>A,BRCA2,118,Hereditary cancer-predisposing syndrome,False
+37845,c.353G>A,BRCA2,118,not provided,False
+37845,c.353G>A,BRCA2,118,not specified,False
+51644,c.440A>G,BRCA2,147,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+51711,c.475G>A,BRCA2,159,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+51711,c.475G>A,BRCA2,159,Familial cancer of breast,False
+51711,c.475G>A,BRCA2,159,Hereditary breast ovarian cancer syndrome,False
+51711,c.475G>A,BRCA2,159,Hereditary cancer-predisposing syndrome,False
+51711,c.475G>A,BRCA2,159,not provided,False
+233552,c.670G>A,BRCA2,224,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+233552,c.670G>A,BRCA2,224,Familial pancreatic carcinoma,True
+233552,c.670G>A,BRCA2,224,Hereditary breast ovarian cancer syndrome,False
+233552,c.670G>A,BRCA2,224,Hereditary cancer-predisposing syndrome,False
+233552,c.670G>A,BRCA2,224,not provided,False
+96766,c.1568A>G,BRCA2,523,Breast neoplasm,False
+96766,c.1568A>G,BRCA2,523,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+96766,c.1568A>G,BRCA2,523,Hereditary breast ovarian cancer syndrome,False
+96766,c.1568A>G,BRCA2,523,Hereditary cancer-predisposing syndrome,False
+96766,c.1568A>G,BRCA2,523,Malignant tumor of pancreas,True
+96766,c.1568A>G,BRCA2,523,Ovarian cancer,False
+96766,c.1568A>G,BRCA2,523,not provided,False
+96766,c.1568A>G,BRCA2,523,not specified,False
+430955,c.1736T>G,BRCA2,579,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+430955,c.1736T>G,BRCA2,579,Hereditary breast ovarian cancer syndrome,False
+430955,c.1736T>G,BRCA2,579,Hereditary cancer-predisposing syndrome,False
+430955,c.1736T>G,BRCA2,579,"Pancreatic cancer, susceptibility to, 2",True
+430955,c.1736T>G,BRCA2,579,not provided,False
+37767,c.1865C>T,BRCA2,622,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+2002162,c.1897A>G,BRCA2,633,Familial pancreatic carcinoma,True
+2002162,c.1897A>G,BRCA2,633,Hereditary breast ovarian cancer syndrome,False
+2002162,c.1897A>G,BRCA2,633,Hereditary cancer-predisposing syndrome,False
+2002162,c.1897A>G,BRCA2,633,not provided,False
+845197,c.1967C>T,BRCA2,656,Hereditary breast ovarian cancer syndrome,False
+845197,c.1967C>T,BRCA2,656,Hereditary cancer-predisposing syndrome,False
+845197,c.1967C>T,BRCA2,656,"Pancreatic cancer, susceptibility to, 2",True
+37775,c.2152G>A,BRCA2,718,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+37775,c.2152G>A,BRCA2,718,Familial pancreatic carcinoma,True
+37775,c.2152G>A,BRCA2,718,Hereditary breast ovarian cancer syndrome,False
+37775,c.2152G>A,BRCA2,718,Hereditary cancer-predisposing syndrome,False
+37775,c.2152G>A,BRCA2,718,not provided,False
+462264,c.2353A>G,BRCA2,785,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+462264,c.2353A>G,BRCA2,785,Familial pancreatic carcinoma,True
+462264,c.2353A>G,BRCA2,785,Hereditary breast ovarian cancer syndrome,False
+462264,c.2353A>G,BRCA2,785,Hereditary cancer-predisposing syndrome,False
+462264,c.2353A>G,BRCA2,785,not specified,False
+216241,c.2671G>C,BRCA2,891,BRCA2-related cancer predisposition,False
+216241,c.2671G>C,BRCA2,891,Hereditary breast ovarian cancer syndrome,False
+216241,c.2671G>C,BRCA2,891,Hereditary cancer-predisposing syndrome,False
+216241,c.2671G>C,BRCA2,891,not provided,False
+216241,c.2671G>C,BRCA2,891,not specified,False
+236842,c.2729A>G,BRCA2,910,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+236842,c.2729A>G,BRCA2,910,Familial colorectal cancer type X,False
+236842,c.2729A>G,BRCA2,910,Familial pancreatic carcinoma,True
+236842,c.2729A>G,BRCA2,910,Hereditary breast ovarian cancer syndrome,False
+236842,c.2729A>G,BRCA2,910,Hereditary cancer-predisposing syndrome,False
+236842,c.2729A>G,BRCA2,910,not provided,False
+236842,c.2729A>G,BRCA2,910,not specified,False
+446277,c.3504G>T,BRCA2,1168,Hereditary cancer-predisposing syndrome,False
+446277,c.3504G>T,BRCA2,1168,not provided,False
+630553,c.4363G>T,BRCA2,1455,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+630553,c.4363G>T,BRCA2,1455,Familial cancer of breast,False
+630553,c.4363G>T,BRCA2,1455,Familial prostate cancer,False
+630553,c.4363G>T,BRCA2,1455,Fanconi anemia complementation group D1,False
+630553,c.4363G>T,BRCA2,1455,Glioma susceptibility 3,False
+630553,c.4363G>T,BRCA2,1455,Hereditary breast ovarian cancer syndrome,False
+630553,c.4363G>T,BRCA2,1455,Hereditary cancer-predisposing syndrome,False
+630553,c.4363G>T,BRCA2,1455,Medulloblastoma,False
+630553,c.4363G>T,BRCA2,1455,"Pancreatic cancer, susceptibility to, 2",True
+630553,c.4363G>T,BRCA2,1455,Wilms tumor 1,False
+630553,c.4363G>T,BRCA2,1455,not provided,False
+232914,c.4450G>A,BRCA2,1484,Hereditary breast ovarian cancer syndrome,False
+232914,c.4450G>A,BRCA2,1484,Hereditary cancer-predisposing syndrome,False
+232914,c.4450G>A,BRCA2,1484,"Pancreatic cancer, susceptibility to, 2",True
+51659,c.4525C>T,BRCA2,1509,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+37932,c.4915G>A,BRCA2,1639,Breast neoplasm,False
+37932,c.4915G>A,BRCA2,1639,Familial pancreatic carcinoma,True
+37932,c.4915G>A,BRCA2,1639,Hereditary breast ovarian cancer syndrome,False
+37932,c.4915G>A,BRCA2,1639,Hereditary cancer-predisposing syndrome,False
+37932,c.4915G>A,BRCA2,1639,not provided,False
+37932,c.4915G>A,BRCA2,1639,not specified,False
+37936,c.4965C>G,BRCA2,1655,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+37948,c.5164A>T,BRCA2,1722,BRCA2-related cancer predisposition,False
+37948,c.5164A>T,BRCA2,1722,Hereditary breast ovarian cancer syndrome,False
+37948,c.5164A>T,BRCA2,1722,Hereditary cancer-predisposing syndrome,False
+37948,c.5164A>T,BRCA2,1722,"Pancreatic cancer, susceptibility to, 2",True
+37948,c.5164A>T,BRCA2,1722,not provided,False
+37948,c.5164A>T,BRCA2,1722,not specified,False
+37968,c.5474C>T,BRCA2,1825,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+37968,c.5474C>T,BRCA2,1825,Familial pancreatic carcinoma,True
+37968,c.5474C>T,BRCA2,1825,Hereditary breast ovarian cancer syndrome,False
+37968,c.5474C>T,BRCA2,1825,Hereditary cancer-predisposing syndrome,False
+37968,c.5474C>T,BRCA2,1825,not provided,False
+37968,c.5474C>T,BRCA2,1825,not specified,False
+142313,c.5536A>G,BRCA2,1846,BRCA2-related disorder,False
+142313,c.5536A>G,BRCA2,1846,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+142313,c.5536A>G,BRCA2,1846,Familial pancreatic carcinoma,True
+142313,c.5536A>G,BRCA2,1846,Hereditary breast ovarian cancer syndrome,False
+142313,c.5536A>G,BRCA2,1846,Hereditary cancer-predisposing syndrome,False
+142313,c.5536A>G,BRCA2,1846,not provided,False
+142313,c.5536A>G,BRCA2,1846,not specified,False
+126072,c.5682C>A,BRCA2,1894,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+51982,c.5986G>A,BRCA2,1996,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+51982,c.5986G>A,BRCA2,1996,Familial pancreatic carcinoma,True
+51982,c.5986G>A,BRCA2,1996,Fanconi anemia complementation group D1,False
+51982,c.5986G>A,BRCA2,1996,Hereditary breast ovarian cancer syndrome,False
+51982,c.5986G>A,BRCA2,1996,Hereditary cancer-predisposing syndrome,False
+51982,c.5986G>A,BRCA2,1996,not provided,False
+51982,c.5986G>A,BRCA2,1996,not specified,False
+3779426,c.6173T>A,BRCA2,2058,Familial pancreatic carcinoma,True
+1804780,c.6235G>A,BRCA2,2079,Hereditary cancer-predisposing syndrome,False
+1804780,c.6235G>A,BRCA2,2079,not specified,False
+41560,c.6325G>A,BRCA2,2109,Breast neoplasm,False
+41560,c.6325G>A,BRCA2,2109,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+41560,c.6325G>A,BRCA2,2109,Fanconi anemia complementation group D1,False
+41560,c.6325G>A,BRCA2,2109,Hereditary breast ovarian cancer syndrome,False
+41560,c.6325G>A,BRCA2,2109,Hereditary cancer-predisposing syndrome,False
+41560,c.6325G>A,BRCA2,2109,Malignant tumor of pancreas,True
+41560,c.6325G>A,BRCA2,2109,not provided,False
+41560,c.6325G>A,BRCA2,2109,not specified,False
+141259,c.6479A>G,BRCA2,2160,Hereditary breast ovarian cancer syndrome,False
+141259,c.6479A>G,BRCA2,2160,Hereditary cancer-predisposing syndrome,False
+141259,c.6479A>G,BRCA2,2160,"Pancreatic cancer, susceptibility to, 2",True
+479314,c.6553G>C,BRCA2,2185,Hereditary breast ovarian cancer syndrome,False
+479314,c.6553G>C,BRCA2,2185,Hereditary cancer-predisposing syndrome,False
+479314,c.6553G>C,BRCA2,2185,"Pancreatic cancer, susceptibility to, 2",True
+479314,c.6553G>C,BRCA2,2185,not provided,False
+479314,c.6553G>C,BRCA2,2185,not specified,False
+126113,c.6645C>G,BRCA2,2215,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+52166,c.6713A>G,BRCA2,2238,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+52166,c.6713A>G,BRCA2,2238,Fanconi anemia complementation group D1,False
+52166,c.6713A>G,BRCA2,2238,Hereditary breast ovarian cancer syndrome,False
+52166,c.6713A>G,BRCA2,2238,Hereditary cancer-predisposing syndrome,False
+52166,c.6713A>G,BRCA2,2238,"Pancreatic cancer, susceptibility to, 2",True
+52166,c.6713A>G,BRCA2,2238,not provided,False
+52166,c.6713A>G,BRCA2,2238,not specified,False
+38099,c.7480C>T,BRCA2,2494,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+52347,c.7522G>A,BRCA2,2508,BRCA2-related disorder,False
+52347,c.7522G>A,BRCA2,2508,Breast neoplasm,False
+52347,c.7522G>A,BRCA2,2508,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+52347,c.7522G>A,BRCA2,2508,Hereditary breast ovarian cancer syndrome,False
+52347,c.7522G>A,BRCA2,2508,Hereditary cancer-predisposing syndrome,False
+52347,c.7522G>A,BRCA2,2508,Infiltrating duct carcinoma of breast,False
+52347,c.7522G>A,BRCA2,2508,Malignant tumor of pancreas,True
+52347,c.7522G>A,BRCA2,2508,Ovarian cancer,False
+52347,c.7522G>A,BRCA2,2508,not provided,False
+52347,c.7522G>A,BRCA2,2508,not specified,False
+142729,c.7580T>C,BRCA2,2527,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+142729,c.7580T>C,BRCA2,2527,Familial cancer of breast,False
+142729,c.7580T>C,BRCA2,2527,Familial prostate cancer,False
+142729,c.7580T>C,BRCA2,2527,Fanconi anemia complementation group D1,False
+142729,c.7580T>C,BRCA2,2527,Glioma susceptibility 3,False
+142729,c.7580T>C,BRCA2,2527,Hereditary breast ovarian cancer syndrome,False
+142729,c.7580T>C,BRCA2,2527,Hereditary cancer-predisposing syndrome,False
+142729,c.7580T>C,BRCA2,2527,Medulloblastoma,False
+142729,c.7580T>C,BRCA2,2527,"Pancreatic cancer, susceptibility to, 2",True
+142729,c.7580T>C,BRCA2,2527,Wilms tumor 1,False
+142729,c.7580T>C,BRCA2,2527,not specified,False
+409479,c.7676C>G,BRCA2,2559,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+409479,c.7676C>G,BRCA2,2559,Familial cancer of breast,False
+409479,c.7676C>G,BRCA2,2559,Familial pancreatic carcinoma,True
+409479,c.7676C>G,BRCA2,2559,Hereditary breast ovarian cancer syndrome,False
+409479,c.7676C>G,BRCA2,2559,Hereditary cancer-predisposing syndrome,False
+409479,c.7676C>G,BRCA2,2559,not provided,False
+233726,c.7766C>T,BRCA2,2589,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+233726,c.7766C>T,BRCA2,2589,Familial pancreatic carcinoma,True
+233726,c.7766C>T,BRCA2,2589,Hereditary breast ovarian cancer syndrome,False
+233726,c.7766C>T,BRCA2,2589,Hereditary cancer-predisposing syndrome,False
+233726,c.7766C>T,BRCA2,2589,not specified,False
+3779434,c.7910C>A,BRCA2,2637,"Pancreatic cancer, susceptibility to, 2",True
+185168,c.8011G>T,BRCA2,2671,Familial pancreatic carcinoma,True
+185168,c.8011G>T,BRCA2,2671,Hereditary breast ovarian cancer syndrome,False
+185168,c.8011G>T,BRCA2,2671,Hereditary cancer-predisposing syndrome,False
+185168,c.8011G>T,BRCA2,2671,not provided,False
+185168,c.8011G>T,BRCA2,2671,not specified,False
+52482,c.8039A>G,BRCA2,2680,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+52482,c.8039A>G,BRCA2,2680,Familial pancreatic carcinoma,True
+52482,c.8039A>G,BRCA2,2680,Hereditary breast ovarian cancer syndrome,False
+52482,c.8039A>G,BRCA2,2680,Hereditary cancer-predisposing syndrome,False
+52482,c.8039A>G,BRCA2,2680,Inherited ovarian cancer (without breast cancer),False
+52482,c.8039A>G,BRCA2,2680,not specified,False
+52515,c.8167G>C,BRCA2,2723,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+52562,c.8359C>T,BRCA2,2787,BRCA2-related disorder,False
+52562,c.8359C>T,BRCA2,2787,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+52562,c.8359C>T,BRCA2,2787,Hereditary breast ovarian cancer syndrome,False
+52562,c.8359C>T,BRCA2,2787,Hereditary cancer-predisposing syndrome,False
+52562,c.8359C>T,BRCA2,2787,"Pancreatic cancer, susceptibility to, 2",True
+52562,c.8359C>T,BRCA2,2787,not provided,False
+52562,c.8359C>T,BRCA2,2787,not specified,False
+656996,c.8363G>T,BRCA2,2788,Hereditary breast ovarian cancer syndrome,False
+656996,c.8363G>T,BRCA2,2788,Hereditary cancer-predisposing syndrome,False
+656996,c.8363G>T,BRCA2,2788,"Pancreatic cancer, susceptibility to, 2",True
+219665,c.8987T>A,BRCA2,2996,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+38212,c.9106C>G,BRCA2,3036,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+38212,c.9106C>G,BRCA2,3036,Familial cancer of breast,False
+38212,c.9106C>G,BRCA2,3036,Familial pancreatic carcinoma,True
+38212,c.9106C>G,BRCA2,3036,Fanconi anemia complementation group D1,False
+38212,c.9106C>G,BRCA2,3036,Hereditary breast ovarian cancer syndrome,False
+38212,c.9106C>G,BRCA2,3036,Hereditary cancer-predisposing syndrome,False
+38212,c.9106C>G,BRCA2,3036,not provided,False
+38212,c.9106C>G,BRCA2,3036,not specified,False
+52763,c.9154C>T,BRCA2,3052,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+559995,c.9206G>A,BRCA2,3069,Hereditary breast ovarian cancer syndrome,False
+559995,c.9206G>A,BRCA2,3069,Hereditary cancer-predisposing syndrome,False
+3779439,c.9571T>G,BRCA2,3191,Familial pancreatic carcinoma,True
+52905,c.9838C>T,BRCA2,3280,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+52905,c.9838C>T,BRCA2,3280,Familial pancreatic carcinoma,True
+52905,c.9838C>T,BRCA2,3280,Hereditary breast ovarian cancer syndrome,False
+52905,c.9838C>T,BRCA2,3280,Hereditary cancer-predisposing syndrome,False
+52905,c.9838C>T,BRCA2,3280,not provided,False
+52905,c.9838C>T,BRCA2,3280,not specified,False
+419387,c.10131A>C,BRCA2,3377,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+419387,c.10131A>C,BRCA2,3377,Hereditary breast ovarian cancer syndrome,False
+419387,c.10131A>C,BRCA2,3377,Hereditary cancer-predisposing syndrome,False
+419387,c.10131A>C,BRCA2,3377,not provided,False
+419387,c.10131A>C,BRCA2,3377,not specified,False
+51049,c.10150C>T,BRCA2,3384,BRCA2-related cancer predisposition,False
+51049,c.10150C>T,BRCA2,3384,"Breast-ovarian cancer, familial, susceptibility to, 2",False
+51049,c.10150C>T,BRCA2,3384,Hereditary breast ovarian cancer syndrome,False
+51049,c.10150C>T,BRCA2,3384,Hereditary cancer-predisposing syndrome,False
+51049,c.10150C>T,BRCA2,3384,not provided,False
+51049,c.10150C>T,BRCA2,3384,not specified,False

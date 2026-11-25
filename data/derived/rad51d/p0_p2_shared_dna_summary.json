@@ -1,0 +1,26 @@
+{
+  "recurrent_key_overlap": {
+    "10": {
+      "p0_distinct_keys_ge_threshold": 1705,
+      "p2_distinct_keys_ge_threshold": 3260,
+      "shared_keys_reaching_threshold_in_both_samples": 783
+    },
+    "2": {
+      "p0_distinct_keys_ge_threshold": 22130,
+      "p2_distinct_keys_ge_threshold": 11518,
+      "shared_keys_reaching_threshold_in_both_samples": 6985
+    },
+    "20": {
+      "p0_distinct_keys_ge_threshold": 159,
+      "p2_distinct_keys_ge_threshold": 1554,
+      "shared_keys_reaching_threshold_in_both_samples": 105
+    },
+    "5": {
+      "p0_distinct_keys_ge_threshold": 7544,
+      "p2_distinct_keys_ge_threshold": 6026,
+      "shared_keys_reaching_threshold_in_both_samples": 2632
+    }
+  },
+  "shared_dna_table_rows": 10637,
+  "total_shared_full_dna_keys": 10637
+}

@@ -1,0 +1,33 @@
+name: Frozen-result and core reproduction
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+      MPLBACKEND: Agg
+      PYTHONNOUSERSITE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python tests/verify_manifest.py
+      - run: python tests/verify_frozen_results.py
+      - run: python scripts/reproduce.py collection
+      - run: python scripts/reproduce.py brca2-map
+      - run: python scripts/reproduce.py brca2
+      - run: python scripts/reproduce.py brca2-direction
+      - run: python scripts/reproduce.py selection
+      - run: python scripts/reproduce.py figures
+      - run: python tests/verify_recomputed_core.py
+# MSH2 source download/full reconstruction is documented separately to avoid
+# making an external archive's availability a prerequisite for every pull request.

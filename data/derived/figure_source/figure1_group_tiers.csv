@@ -1,0 +1,10 @@
+tier,group_state,n_groups
+accession_reference,zero,9205
+accession_reference,ge2,3836
+versioned_request,zero,10362
+versioned_request,ge2,2679
+target_sequence_conditional,zero_target_compatible_under_assumption,4245
+target_sequence_conditional,not_assessed_target_sequence,3836
+target_sequence_conditional,tpk1_full_construct_unresolved,2474
+target_sequence_conditional,conditional_one,1473
+target_sequence_conditional,conditional_ge2,1013

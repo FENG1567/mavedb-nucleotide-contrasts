@@ -1,0 +1,10 @@
+Held replicate / target,Target-complete groups / DNA identities / positions,Amino-acid-only RMSE,DNA-informed RMSE,Relative RMSE gain (95% interval),"Paired ΔMSE, DNA minus amino-acid-only (95% interval)"
+"1, 6-TG/mock","8,547 / 24,619 / 887",2.310,2.213,4.18% (3.79–4.58%),−0.437 (−0.479 to −0.394)
+"1, mock/P0","8,547 / 24,619 / 887",0.402,0.377,6.03% (not estimated),−0.019 (not estimated)
+"1, 6-TG/P0","8,547 / 24,619 / 887",2.311,2.210,4.33% (not estimated),−0.452 (not estimated)
+"2, 6-TG/mock","8,416 / 23,997 / 900",2.109,2.015,4.48% (4.03–4.94%),−0.390 (−0.430 to −0.350)
+"2, mock/P0","8,416 / 23,997 / 900",0.400,0.376,5.95% (not estimated),−0.018 (not estimated)
+"2, 6-TG/P0","8,416 / 23,997 / 900",2.117,2.019,4.65% (not estimated),−0.407 (not estimated)
+"3, 6-TG/mock","8,474 / 24,156 / 892",2.226,2.133,4.20% (3.75–4.65%),−0.407 (−0.451 to −0.365)
+"3, mock/P0","8,474 / 24,156 / 892",0.421,0.397,5.69% (not estimated),−0.020 (not estimated)
+"3, 6-TG/P0","8,474 / 24,156 / 892",2.227,2.128,4.41% (not estimated),−0.428 (not estimated)

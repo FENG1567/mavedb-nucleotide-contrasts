@@ -1,0 +1,2711 @@
+{
+  "audit": "Raw-count-table integrity and score-summary validation",
+  "status": "PASS",
+  "input": {
+    "path": "GSE162130_MSH2_HAP1_raw_count.tsv.gz",
+    "sha256": "9e315efaf715db4f906aaf5b82b4175847af819d5f65659f03e5070d710e2299",
+    "expected_sha256": "9e315efaf715db4f906aaf5b82b4175847af819d5f65659f03e5070d710e2299",
+    "rows": 58863,
+    "missense_dna_variants": 53800,
+    "missense_amino_acid_groups": 17746,
+    "raw_count_cell_checks": {
+      "R1D_P0": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "R1DB6_P2": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "R1DB_P2": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "R2D_P0": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "R2DB6_P2": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "R2DB_P2": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "R3D_P0": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "R3DB6_P2": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "R3DB_P2": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      },
+      "WT_plasmid": {
+        "missing": 0,
+        "malformed": 0,
+        "nonfinite": 0,
+        "negative": 0,
+        "noninteger": 0
+      }
+    },
+    "raw_count_cells_missing_malformed_nonfinite_negative_noninteger": 0,
+    "normalized_source_corrected_and_frequency_values_all_finite": true
+  },
+  "analysis_code": {
+    "sha256": "ec405a341d9d068717d75ecdc2ad39e779066af7266015d825dd2deb02af563b",
+    "provenance_sha256_match": true
+  },
+  "eligibility": {
+    "staged_masks_exactly_match_locked_source_eligibility": true,
+    "stages_and_counts_file": "attrition_staged.csv",
+    "held_replicates": [
+      1,
+      2,
+      3
+    ],
+    "checks": [
+      {
+        "check": "held1 candidate DNA matches locked attrition.candidate_missense_variants",
+        "passed": true,
+        "observed": 53800.0,
+        "expected": 53800.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 candidate groups matches locked attrition.candidate_amino_acid_groups",
+        "passed": true,
+        "observed": 17746.0,
+        "expected": 17746.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 any-source raw gate matches locked attrition.observed_nonzero_any_source_condition",
+        "passed": true,
+        "observed": 53441.0,
+        "expected": 53441.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 all-source raw gate matches locked attrition.all_source_raw_conditions_nonzero_pass_variants",
+        "passed": true,
+        "observed": 40323.0,
+        "expected": 40323.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 depth gate matches locked attrition.all_three_condition_frequency_pass_variants",
+        "passed": true,
+        "observed": 29273.0,
+        "expected": 29273.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 both-source mock QC gate matches locked attrition.source_mock_qc_pass_variants",
+        "passed": true,
+        "observed": 52947.0,
+        "expected": 52947.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 locked source-eligible gate matches locked attrition.source_eligible_after_mock_qc_variants",
+        "passed": true,
+        "observed": 29252.0,
+        "expected": 29252.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 source-eligible DNA matches locked attrition.source_eligible_variants",
+        "passed": true,
+        "observed": 29252.0,
+        "expected": 29252.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 multi-DNA variants matches locked attrition.source_eligible_multidna_variants",
+        "passed": true,
+        "observed": 24619.0,
+        "expected": 24619.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 multi-DNA positions matches locked attrition.source_eligible_multidna_positions",
+        "passed": true,
+        "observed": 887.0,
+        "expected": 887.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 multi-DNA groups matches locked attrition.eligible_groups_multidna",
+        "passed": true,
+        "observed": 8547.0,
+        "expected": 8547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 matched target-complete DNA matches locked attrition.common_target_complete_variants",
+        "passed": true,
+        "observed": 24619.0,
+        "expected": 24619.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 matched target-complete groups matches locked attrition.common_target_complete_groups",
+        "passed": true,
+        "observed": 8547.0,
+        "expected": 8547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held1 matched target-complete positions matches locked attrition.common_target_complete_positions",
+        "passed": true,
+        "observed": 887.0,
+        "expected": 887.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 candidate DNA matches locked attrition.candidate_missense_variants",
+        "passed": true,
+        "observed": 53800.0,
+        "expected": 53800.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 candidate groups matches locked attrition.candidate_amino_acid_groups",
+        "passed": true,
+        "observed": 17746.0,
+        "expected": 17746.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 any-source raw gate matches locked attrition.observed_nonzero_any_source_condition",
+        "passed": true,
+        "observed": 53430.0,
+        "expected": 53430.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 all-source raw gate matches locked attrition.all_source_raw_conditions_nonzero_pass_variants",
+        "passed": true,
+        "observed": 39707.0,
+        "expected": 39707.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 depth gate matches locked attrition.all_three_condition_frequency_pass_variants",
+        "passed": true,
+        "observed": 28786.0,
+        "expected": 28786.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 both-source mock QC gate matches locked attrition.source_mock_qc_pass_variants",
+        "passed": true,
+        "observed": 52839.0,
+        "expected": 52839.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 locked source-eligible gate matches locked attrition.source_eligible_after_mock_qc_variants",
+        "passed": true,
+        "observed": 28754.0,
+        "expected": 28754.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 source-eligible DNA matches locked attrition.source_eligible_variants",
+        "passed": true,
+        "observed": 28754.0,
+        "expected": 28754.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 multi-DNA variants matches locked attrition.source_eligible_multidna_variants",
+        "passed": true,
+        "observed": 23997.0,
+        "expected": 23997.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 multi-DNA positions matches locked attrition.source_eligible_multidna_positions",
+        "passed": true,
+        "observed": 900.0,
+        "expected": 900.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 multi-DNA groups matches locked attrition.eligible_groups_multidna",
+        "passed": true,
+        "observed": 8416.0,
+        "expected": 8416.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 matched target-complete DNA matches locked attrition.common_target_complete_variants",
+        "passed": true,
+        "observed": 23997.0,
+        "expected": 23997.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 matched target-complete groups matches locked attrition.common_target_complete_groups",
+        "passed": true,
+        "observed": 8416.0,
+        "expected": 8416.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held2 matched target-complete positions matches locked attrition.common_target_complete_positions",
+        "passed": true,
+        "observed": 900.0,
+        "expected": 900.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 candidate DNA matches locked attrition.candidate_missense_variants",
+        "passed": true,
+        "observed": 53800.0,
+        "expected": 53800.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 candidate groups matches locked attrition.candidate_amino_acid_groups",
+        "passed": true,
+        "observed": 17746.0,
+        "expected": 17746.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 any-source raw gate matches locked attrition.observed_nonzero_any_source_condition",
+        "passed": true,
+        "observed": 53448.0,
+        "expected": 53448.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 all-source raw gate matches locked attrition.all_source_raw_conditions_nonzero_pass_variants",
+        "passed": true,
+        "observed": 39990.0,
+        "expected": 39990.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 depth gate matches locked attrition.all_three_condition_frequency_pass_variants",
+        "passed": true,
+        "observed": 28960.0,
+        "expected": 28960.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 both-source mock QC gate matches locked attrition.source_mock_qc_pass_variants",
+        "passed": true,
+        "observed": 53016.0,
+        "expected": 53016.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 locked source-eligible gate matches locked attrition.source_eligible_after_mock_qc_variants",
+        "passed": true,
+        "observed": 28925.0,
+        "expected": 28925.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 source-eligible DNA matches locked attrition.source_eligible_variants",
+        "passed": true,
+        "observed": 28925.0,
+        "expected": 28925.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 multi-DNA variants matches locked attrition.source_eligible_multidna_variants",
+        "passed": true,
+        "observed": 24156.0,
+        "expected": 24156.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 multi-DNA positions matches locked attrition.source_eligible_multidna_positions",
+        "passed": true,
+        "observed": 892.0,
+        "expected": 892.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 multi-DNA groups matches locked attrition.eligible_groups_multidna",
+        "passed": true,
+        "observed": 8474.0,
+        "expected": 8474.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 matched target-complete DNA matches locked attrition.common_target_complete_variants",
+        "passed": true,
+        "observed": 24156.0,
+        "expected": 24156.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 matched target-complete groups matches locked attrition.common_target_complete_groups",
+        "passed": true,
+        "observed": 8474.0,
+        "expected": 8474.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "held3 matched target-complete positions matches locked attrition.common_target_complete_positions",
+        "passed": true,
+        "observed": 892.0,
+        "expected": 892.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/6TG_mock/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 744.0,
+        "expected": 744.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/6TG_mock/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/6TG_mock/target_zero_both_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/6TG_mock/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/6TG_mock/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/6TG_mock/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/6TG_mock/target_complete_common_groups",
+        "passed": true,
+        "observed": 8547.0,
+        "expected": 8547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/6TG_mock/target_complete_common_variants",
+        "passed": true,
+        "observed": 24619.0,
+        "expected": 24619.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/mock_P0/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/mock_P0/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/mock_P0/target_zero_both_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/mock_P0/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/mock_P0/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/mock_P0/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/mock_P0/target_complete_common_groups",
+        "passed": true,
+        "observed": 8547.0,
+        "expected": 8547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/mock_P0/target_complete_common_variants",
+        "passed": true,
+        "observed": 24619.0,
+        "expected": 24619.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/DB6_P0/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 744.0,
+        "expected": 744.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/DB6_P0/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/DB6_P0/target_zero_both_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/DB6_P0/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/DB6_P0/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/DB6_P0/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/DB6_P0/target_complete_common_groups",
+        "passed": true,
+        "observed": 8547.0,
+        "expected": 8547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 1/DB6_P0/target_complete_common_variants",
+        "passed": true,
+        "observed": 24619.0,
+        "expected": 24619.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/6TG_mock/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 547.0,
+        "expected": 547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/6TG_mock/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/6TG_mock/target_zero_both_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/6TG_mock/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/6TG_mock/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/6TG_mock/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/6TG_mock/target_complete_common_groups",
+        "passed": true,
+        "observed": 8416.0,
+        "expected": 8416.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/6TG_mock/target_complete_common_variants",
+        "passed": true,
+        "observed": 23997.0,
+        "expected": 23997.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/mock_P0/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/mock_P0/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/mock_P0/target_zero_both_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/mock_P0/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/mock_P0/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/mock_P0/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/mock_P0/target_complete_common_groups",
+        "passed": true,
+        "observed": 8416.0,
+        "expected": 8416.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/mock_P0/target_complete_common_variants",
+        "passed": true,
+        "observed": 23997.0,
+        "expected": 23997.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/DB6_P0/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 547.0,
+        "expected": 547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/DB6_P0/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/DB6_P0/target_zero_both_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/DB6_P0/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/DB6_P0/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/DB6_P0/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/DB6_P0/target_complete_common_groups",
+        "passed": true,
+        "observed": 8416.0,
+        "expected": 8416.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 2/DB6_P0/target_complete_common_variants",
+        "passed": true,
+        "observed": 23997.0,
+        "expected": 23997.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/6TG_mock/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 675.0,
+        "expected": 675.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/6TG_mock/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/6TG_mock/target_zero_both_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/6TG_mock/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/6TG_mock/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/6TG_mock/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/6TG_mock/target_complete_common_groups",
+        "passed": true,
+        "observed": 8474.0,
+        "expected": 8474.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/6TG_mock/target_complete_common_variants",
+        "passed": true,
+        "observed": 24156.0,
+        "expected": 24156.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/mock_P0/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/mock_P0/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/mock_P0/target_zero_both_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/mock_P0/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/mock_P0/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/mock_P0/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/mock_P0/target_complete_common_groups",
+        "passed": true,
+        "observed": 8474.0,
+        "expected": 8474.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/mock_P0/target_complete_common_variants",
+        "passed": true,
+        "observed": 24156.0,
+        "expected": 24156.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/DB6_P0/target_zero_numerator_variants",
+        "passed": true,
+        "observed": 675.0,
+        "expected": 675.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/DB6_P0/target_zero_denominator_variants",
+        "passed": true,
+        "observed": 1.0,
+        "expected": 1.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/DB6_P0/target_zero_both_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/DB6_P0/target_missing_numerator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/DB6_P0/target_missing_denominator_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/DB6_P0/target_missing_score_variants",
+        "passed": true,
+        "observed": 0.0,
+        "expected": 0.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/DB6_P0/target_complete_common_groups",
+        "passed": true,
+        "observed": 8474.0,
+        "expected": 8474.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "raw count matrix vs saved target_zero_missing 3/DB6_P0/target_complete_common_variants",
+        "passed": true,
+        "observed": 24156.0,
+        "expected": 24156.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "DB6_P0 target-score additivity held=1",
+        "passed": true,
+        "observed": 3.649858193455202e-15,
+        "expected": 0.0,
+        "absolute_difference": 3.649858193455202e-15,
+        "atol": 1e-12,
+        "rtol": 0.0
+      },
+      {
+        "check": "DB6_P0 target-score additivity held=2",
+        "passed": true,
+        "observed": 3.594347042223944e-15,
+        "expected": 0.0,
+        "absolute_difference": 3.594347042223944e-15,
+        "atol": 1e-12,
+        "rtol": 0.0
+      },
+      {
+        "check": "DB6_P0 target-score additivity held=3",
+        "passed": true,
+        "observed": 3.635980405647388e-15,
+        "expected": 0.0,
+        "absolute_difference": 3.635980405647388e-15,
+        "atol": 1e-12,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=mse_aa",
+        "passed": true,
+        "observed": 5.336515996988104,
+        "expected": 5.336515996988104,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=mse_full",
+        "passed": true,
+        "observed": 4.899212302451085,
+        "expected": 4.899212302451085,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=rmse_aa",
+        "passed": true,
+        "observed": 2.310090040883278,
+        "expected": 2.310090040883278,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=rmse_full",
+        "passed": true,
+        "observed": 2.21341643222668,
+        "expected": 2.21341643222668,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.09667360865659802,
+        "expected": -0.096673608656598,
+        "absolute_difference": 1.3877787807814457e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 1.6470418210734028,
+        "expected": 1.6470418210734028,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 1.5555079025369205,
+        "expected": 1.5555079025369205,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.437303694537019,
+        "expected": -0.437303694537019,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.041848415839078834,
+        "expected": 0.0418484158390788,
+        "absolute_difference": 3.469446951953614e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=6TG_mock, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.08194554176991697,
+        "expected": 0.0819455417699169,
+        "absolute_difference": 6.938893903907228e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=1, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 8547.0,
+        "expected": 8547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=1, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 24619.0,
+        "expected": 24619.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=1, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 887.0,
+        "expected": 887.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=1, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=mse_aa",
+        "passed": true,
+        "observed": 5.338642866250597,
+        "expected": 5.338642866250597,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=mse_full",
+        "passed": true,
+        "observed": 4.8862517058743915,
+        "expected": 4.886251705874392,
+        "absolute_difference": 8.881784197001252e-16,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=rmse_aa",
+        "passed": true,
+        "observed": 2.3105503383935604,
+        "expected": 2.3105503383935604,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=rmse_full",
+        "passed": true,
+        "observed": 2.210486757679039,
+        "expected": 2.210486757679039,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.10006358071452137,
+        "expected": -0.1000635807145213,
+        "absolute_difference": 6.938893903907228e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 1.6474296154762718,
+        "expected": 1.6474296154762718,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 1.5500433914754475,
+        "expected": 1.5500433914754477,
+        "absolute_difference": 2.220446049250313e-16,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.4523911603762052,
+        "expected": -0.4523911603762052,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.043307249814817594,
+        "expected": 0.0433072498148175,
+        "absolute_difference": 9.71445146547012e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=DB6_P0, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.08473898174311212,
+        "expected": 0.0847389817431121,
+        "absolute_difference": 1.3877787807814457e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=1, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 8547.0,
+        "expected": 8547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=1, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 24619.0,
+        "expected": 24619.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=1, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 887.0,
+        "expected": 887.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=1, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=mse_aa",
+        "passed": true,
+        "observed": 0.16137847416030288,
+        "expected": 0.1613784741603029,
+        "absolute_difference": 2.7755575615628914e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=mse_full",
+        "passed": true,
+        "observed": 0.14250364210713895,
+        "expected": 0.1425036421071389,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=rmse_aa",
+        "passed": true,
+        "observed": 0.40171939729157075,
+        "expected": 0.4017193972915708,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=rmse_full",
+        "passed": true,
+        "observed": 0.377496545821467,
+        "expected": 0.3774965458214671,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.024222851470103723,
+        "expected": -0.0242228514701037,
+        "absolute_difference": 2.42861286636753e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 0.2979724874853837,
+        "expected": 0.2979724874853837,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 0.27761880626556673,
+        "expected": 0.2776188062655667,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.018874832053163926,
+        "expected": -0.0188748320531639,
+        "absolute_difference": 2.42861286636753e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.060297938395348694,
+        "expected": 0.0602979383953488,
+        "absolute_difference": 1.0408340855860843e-16,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=1, endpoint=mock_P0, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.11696003541596811,
+        "expected": 0.1169600354159683,
+        "absolute_difference": 1.942890293094024e-16,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=1, endpoint=mock_P0",
+        "passed": true,
+        "observed": 8547.0,
+        "expected": 8547.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=1, endpoint=mock_P0",
+        "passed": true,
+        "observed": 24619.0,
+        "expected": 24619.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=1, endpoint=mock_P0",
+        "passed": true,
+        "observed": 887.0,
+        "expected": 887.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=1, endpoint=mock_P0",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=mse_aa",
+        "passed": true,
+        "observed": 4.448548399295776,
+        "expected": 4.448548399295776,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=mse_full",
+        "passed": true,
+        "observed": 4.058738681087646,
+        "expected": 4.058738681087646,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=rmse_aa",
+        "passed": true,
+        "observed": 2.1091582205457646,
+        "expected": 2.1091582205457646,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=rmse_full",
+        "passed": true,
+        "observed": 2.014631152615199,
+        "expected": 2.014631152615199,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.09452706793056542,
+        "expected": -0.0945270679305654,
+        "absolute_difference": 2.7755575615628914e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 1.4989137668348034,
+        "expected": 1.4989137668348034,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 1.4032533983906064,
+        "expected": 1.4032533983906064,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.38980971820812993,
+        "expected": -0.3898097182081299,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.044817438070675286,
+        "expected": 0.0448174380706752,
+        "absolute_difference": 8.326672684688674e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=6TG_mock, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.0876262733861316,
+        "expected": 0.0876262733861316,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=2, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 8416.0,
+        "expected": 8416.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=2, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 23997.0,
+        "expected": 23997.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=2, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 900.0,
+        "expected": 900.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=2, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=mse_aa",
+        "passed": true,
+        "observed": 4.483577129617748,
+        "expected": 4.483577129617748,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=mse_full",
+        "passed": true,
+        "observed": 4.076203332793358,
+        "expected": 4.076203332793358,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=rmse_aa",
+        "passed": true,
+        "observed": 2.1174458976837514,
+        "expected": 2.117445897683752,
+        "absolute_difference": 4.440892098500626e-16,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=rmse_full",
+        "passed": true,
+        "observed": 2.0189609537565003,
+        "expected": 2.0189609537565003,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.09848494392725105,
+        "expected": -0.098484943927251,
+        "absolute_difference": 4.163336342344337e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 1.5074619118031942,
+        "expected": 1.5074619118031942,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 1.4045422324833292,
+        "expected": 1.4045422324833292,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.40737379682439023,
+        "expected": -0.4073737968243902,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.04651119730378117,
+        "expected": 0.0465111973037811,
+        "absolute_difference": 6.938893903907228e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=DB6_P0, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.09085910313293111,
+        "expected": 0.0908591031329311,
+        "absolute_difference": 1.3877787807814457e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=2, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 8416.0,
+        "expected": 8416.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=2, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 23997.0,
+        "expected": 23997.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=2, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 900.0,
+        "expected": 900.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=2, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=mse_aa",
+        "passed": true,
+        "observed": 0.15969580214854148,
+        "expected": 0.1596958021485415,
+        "absolute_difference": 2.7755575615628914e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=mse_full",
+        "passed": true,
+        "observed": 0.14124778828210963,
+        "expected": 0.1412477882821096,
+        "absolute_difference": 2.7755575615628914e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=rmse_aa",
+        "passed": true,
+        "observed": 0.39961957177863733,
+        "expected": 0.3996195717786374,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=rmse_full",
+        "passed": true,
+        "observed": 0.37582946702209186,
+        "expected": 0.3758294670220919,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.02379010475654547,
+        "expected": -0.0237901047565454,
+        "absolute_difference": 7.28583859910259e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 0.29463810419499964,
+        "expected": 0.2946381041949996,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 0.27529065236524813,
+        "expected": 0.2752906523652482,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.018448013866431856,
+        "expected": -0.0184480138664318,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.05953188091028638,
+        "expected": 0.0595318809102863,
+        "absolute_difference": 8.326672684688674e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=2, endpoint=mock_P0, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.11551971697585628,
+        "expected": 0.1155197169758563,
+        "absolute_difference": 1.3877787807814457e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=2, endpoint=mock_P0",
+        "passed": true,
+        "observed": 8416.0,
+        "expected": 8416.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=2, endpoint=mock_P0",
+        "passed": true,
+        "observed": 23997.0,
+        "expected": 23997.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=2, endpoint=mock_P0",
+        "passed": true,
+        "observed": 900.0,
+        "expected": 900.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=2, endpoint=mock_P0",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=mse_aa",
+        "passed": true,
+        "observed": 4.956395604188193,
+        "expected": 4.956395604188193,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=mse_full",
+        "passed": true,
+        "observed": 4.549010051141227,
+        "expected": 4.549010051141227,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=rmse_aa",
+        "passed": true,
+        "observed": 2.226296387318677,
+        "expected": 2.226296387318677,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=rmse_full",
+        "passed": true,
+        "observed": 2.132840840555438,
+        "expected": 2.132840840555438,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.0934555467632392,
+        "expected": -0.0934555467632392,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 1.5678284866766121,
+        "expected": 1.5678284866766123,
+        "absolute_difference": 2.220446049250313e-16,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 1.4793044532809312,
+        "expected": 1.4793044532809312,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.4073855530469661,
+        "expected": -0.4073855530469661,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.041978034593945446,
+        "expected": 0.0419780345939454,
+        "absolute_difference": 4.85722573273506e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=6TG_mock, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.08219391379952035,
+        "expected": 0.0821939137995203,
+        "absolute_difference": 4.163336342344337e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=3, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 8474.0,
+        "expected": 8474.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=3, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 24156.0,
+        "expected": 24156.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=3, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 892.0,
+        "expected": 892.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=3, endpoint=6TG_mock",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=mse_aa",
+        "passed": true,
+        "observed": 4.958279974143805,
+        "expected": 4.958279974143805,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=mse_full",
+        "passed": true,
+        "observed": 4.530311023245235,
+        "expected": 4.530311023245235,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=rmse_aa",
+        "passed": true,
+        "observed": 2.2267195544441165,
+        "expected": 2.2267195544441165,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=rmse_full",
+        "passed": true,
+        "observed": 2.1284527298592364,
+        "expected": 2.1284527298592364,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.09826682458488012,
+        "expected": -0.0982668245848801,
+        "absolute_difference": 1.3877787807814457e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 1.5744257432680377,
+        "expected": 1.5744257432680375,
+        "absolute_difference": 2.220446049250313e-16,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 1.4777432374771853,
+        "expected": 1.4777432374771853,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.42796895089856957,
+        "expected": -0.4279689508985695,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.044130759254688345,
+        "expected": 0.0441307592546883,
+        "absolute_difference": 4.85722573273506e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=DB6_P0, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.08631399459698141,
+        "expected": 0.0863139945969814,
+        "absolute_difference": 1.3877787807814457e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=3, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 8474.0,
+        "expected": 8474.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=3, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 24156.0,
+        "expected": 24156.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=3, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 892.0,
+        "expected": 892.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=3, endpoint=DB6_P0",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=mse_aa",
+        "passed": true,
+        "observed": 0.17701536569491494,
+        "expected": 0.1770153656949149,
+        "absolute_difference": 2.7755575615628914e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=mse_full",
+        "passed": true,
+        "observed": 0.15744498504868973,
+        "expected": 0.1574449850486897,
+        "absolute_difference": 2.7755575615628914e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=rmse_aa",
+        "passed": true,
+        "observed": 0.42073194042634193,
+        "expected": 0.420731940426342,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=rmse_full",
+        "passed": true,
+        "observed": 0.3967933782823117,
+        "expected": 0.3967933782823117,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=rmse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.02393856214403023,
+        "expected": -0.0239385621440302,
+        "absolute_difference": 2.7755575615628914e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=mae_aa_group_equal",
+        "passed": true,
+        "observed": 0.3078411066144505,
+        "expected": 0.3078411066144505,
+        "absolute_difference": 0.0,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=mae_full_group_equal",
+        "passed": true,
+        "observed": 0.28764923018582894,
+        "expected": 0.2876492301858289,
+        "absolute_difference": 5.551115123125783e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=paired_mse_difference_full_minus_aa",
+        "passed": true,
+        "observed": -0.01957038064622521,
+        "expected": -0.0195703806462252,
+        "absolute_difference": 1.0408340855860843e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=relative_rmse_gain",
+        "passed": true,
+        "observed": 0.05689742052807423,
+        "expected": 0.0568974205280741,
+        "absolute_difference": 1.249000902703301e-16,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce metric held=3, endpoint=mock_P0, field=relative_mse_gain",
+        "passed": true,
+        "observed": 0.11055752459339974,
+        "expected": 0.1105575245933997,
+        "absolute_difference": 4.163336342344337e-17,
+        "atol": 1e-11,
+        "rtol": 1e-09
+      },
+      {
+        "check": "saved group errors reproduce n_groups held=3, endpoint=mock_P0",
+        "passed": true,
+        "observed": 8474.0,
+        "expected": 8474.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_variants held=3, endpoint=mock_P0",
+        "passed": true,
+        "observed": 24156.0,
+        "expected": 24156.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_positions held=3, endpoint=mock_P0",
+        "passed": true,
+        "observed": 892.0,
+        "expected": 892.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      },
+      {
+        "check": "saved group errors reproduce n_tiles held=3, endpoint=mock_P0",
+        "passed": true,
+        "observed": 21.0,
+        "expected": 21.0,
+        "absolute_difference": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0
+      }
+    ]
+  },
+  "target_zero_missing": {
+    "source_raw_matrix_reconciled_to_saved_csv": true,
+    "recomputed_rows": [
+      {
+        "held_rep": 1,
+        "endpoint": "6TG_mock",
+        "target_zero_numerator_variants": 744,
+        "target_zero_denominator_variants": 1,
+        "target_zero_both_variants": 1,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8547,
+        "target_complete_common_variants": 24619
+      },
+      {
+        "held_rep": 1,
+        "endpoint": "mock_P0",
+        "target_zero_numerator_variants": 1,
+        "target_zero_denominator_variants": 0,
+        "target_zero_both_variants": 0,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8547,
+        "target_complete_common_variants": 24619
+      },
+      {
+        "held_rep": 1,
+        "endpoint": "DB6_P0",
+        "target_zero_numerator_variants": 744,
+        "target_zero_denominator_variants": 0,
+        "target_zero_both_variants": 0,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8547,
+        "target_complete_common_variants": 24619
+      },
+      {
+        "held_rep": 2,
+        "endpoint": "6TG_mock",
+        "target_zero_numerator_variants": 547,
+        "target_zero_denominator_variants": 1,
+        "target_zero_both_variants": 0,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8416,
+        "target_complete_common_variants": 23997
+      },
+      {
+        "held_rep": 2,
+        "endpoint": "mock_P0",
+        "target_zero_numerator_variants": 1,
+        "target_zero_denominator_variants": 1,
+        "target_zero_both_variants": 0,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8416,
+        "target_complete_common_variants": 23997
+      },
+      {
+        "held_rep": 2,
+        "endpoint": "DB6_P0",
+        "target_zero_numerator_variants": 547,
+        "target_zero_denominator_variants": 1,
+        "target_zero_both_variants": 0,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8416,
+        "target_complete_common_variants": 23997
+      },
+      {
+        "held_rep": 3,
+        "endpoint": "6TG_mock",
+        "target_zero_numerator_variants": 675,
+        "target_zero_denominator_variants": 1,
+        "target_zero_both_variants": 1,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8474,
+        "target_complete_common_variants": 24156
+      },
+      {
+        "held_rep": 3,
+        "endpoint": "mock_P0",
+        "target_zero_numerator_variants": 1,
+        "target_zero_denominator_variants": 1,
+        "target_zero_both_variants": 0,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8474,
+        "target_complete_common_variants": 24156
+      },
+      {
+        "held_rep": 3,
+        "endpoint": "DB6_P0",
+        "target_zero_numerator_variants": 675,
+        "target_zero_denominator_variants": 1,
+        "target_zero_both_variants": 0,
+        "target_missing_numerator_variants": 0,
+        "target_missing_denominator_variants": 0,
+        "target_missing_score_variants": 0,
+        "target_complete_common_groups": 8474,
+        "target_complete_common_variants": 24156
+      }
+    ],
+    "target_zero_flags_in_prediction_rows_match_raw_matrix": true,
+    "target_score_values_match_raw_matrix": true
+  },
+  "matched_prediction_cohorts": {
+    "endpoint_key_counts_by_held": {
+      "1": {
+        "6TG_mock": 24619,
+        "mock_P0": 24619,
+        "DB6_P0": 24619
+      },
+      "2": {
+        "6TG_mock": 23997,
+        "mock_P0": 23997,
+        "DB6_P0": 23997
+      },
+      "3": {
+        "6TG_mock": 24156,
+        "mock_P0": 24156,
+        "DB6_P0": 24156
+      }
+    },
+    "same_variant_group_position_keys_across_all_three_endpoints": true,
+    "DB6_P0_equals_6TG_mock_plus_mock_P0_max_abs_error_by_held": {
+      "1": 3.649858193455202e-15,
+      "2": 3.594347042223944e-15,
+      "3": 3.635980405647388e-15
+    },
+    "score_additivity_atol": 1e-12
+  },
+  "group_error_recomputation": {
+    "saved_group_errors_reproduce_all_equal_group_metrics": true,
+    "recomputed_metrics": [
+      {
+        "held_rep": 1,
+        "endpoint": "6TG_mock",
+        "groups": 8547,
+        "recomputed": {
+          "mse_aa": 5.336515996988104,
+          "mse_full": 4.899212302451085,
+          "rmse_aa": 2.310090040883278,
+          "rmse_full": 2.21341643222668,
+          "rmse_difference_full_minus_aa": -0.09667360865659802,
+          "mae_aa_group_equal": 1.6470418210734028,
+          "mae_full_group_equal": 1.5555079025369205,
+          "paired_mse_difference_full_minus_aa": -0.437303694537019,
+          "relative_rmse_gain": 0.041848415839078834,
+          "relative_mse_gain": 0.08194554176991697
+        }
+      },
+      {
+        "held_rep": 1,
+        "endpoint": "DB6_P0",
+        "groups": 8547,
+        "recomputed": {
+          "mse_aa": 5.338642866250597,
+          "mse_full": 4.8862517058743915,
+          "rmse_aa": 2.3105503383935604,
+          "rmse_full": 2.210486757679039,
+          "rmse_difference_full_minus_aa": -0.10006358071452137,
+          "mae_aa_group_equal": 1.6474296154762718,
+          "mae_full_group_equal": 1.5500433914754475,
+          "paired_mse_difference_full_minus_aa": -0.4523911603762052,
+          "relative_rmse_gain": 0.043307249814817594,
+          "relative_mse_gain": 0.08473898174311212
+        }
+      },
+      {
+        "held_rep": 1,
+        "endpoint": "mock_P0",
+        "groups": 8547,
+        "recomputed": {
+          "mse_aa": 0.16137847416030288,
+          "mse_full": 0.14250364210713895,
+          "rmse_aa": 0.40171939729157075,
+          "rmse_full": 0.377496545821467,
+          "rmse_difference_full_minus_aa": -0.024222851470103723,
+          "mae_aa_group_equal": 0.2979724874853837,
+          "mae_full_group_equal": 0.27761880626556673,
+          "paired_mse_difference_full_minus_aa": -0.018874832053163926,
+          "relative_rmse_gain": 0.060297938395348694,
+          "relative_mse_gain": 0.11696003541596811
+        }
+      },
+      {
+        "held_rep": 2,
+        "endpoint": "6TG_mock",
+        "groups": 8416,
+        "recomputed": {
+          "mse_aa": 4.448548399295776,
+          "mse_full": 4.058738681087646,
+          "rmse_aa": 2.1091582205457646,
+          "rmse_full": 2.014631152615199,
+          "rmse_difference_full_minus_aa": -0.09452706793056542,
+          "mae_aa_group_equal": 1.4989137668348034,
+          "mae_full_group_equal": 1.4032533983906064,
+          "paired_mse_difference_full_minus_aa": -0.38980971820812993,
+          "relative_rmse_gain": 0.044817438070675286,
+          "relative_mse_gain": 0.0876262733861316
+        }
+      },
+      {
+        "held_rep": 2,
+        "endpoint": "DB6_P0",
+        "groups": 8416,
+        "recomputed": {
+          "mse_aa": 4.483577129617748,
+          "mse_full": 4.076203332793358,
+          "rmse_aa": 2.1174458976837514,
+          "rmse_full": 2.0189609537565003,
+          "rmse_difference_full_minus_aa": -0.09848494392725105,
+          "mae_aa_group_equal": 1.5074619118031942,
+          "mae_full_group_equal": 1.4045422324833292,
+          "paired_mse_difference_full_minus_aa": -0.40737379682439023,
+          "relative_rmse_gain": 0.04651119730378117,
+          "relative_mse_gain": 0.09085910313293111
+        }
+      },
+      {
+        "held_rep": 2,
+        "endpoint": "mock_P0",
+        "groups": 8416,
+        "recomputed": {
+          "mse_aa": 0.15969580214854148,
+          "mse_full": 0.14124778828210963,
+          "rmse_aa": 0.39961957177863733,
+          "rmse_full": 0.37582946702209186,
+          "rmse_difference_full_minus_aa": -0.02379010475654547,
+          "mae_aa_group_equal": 0.29463810419499964,
+          "mae_full_group_equal": 0.27529065236524813,
+          "paired_mse_difference_full_minus_aa": -0.018448013866431856,
+          "relative_rmse_gain": 0.05953188091028638,
+          "relative_mse_gain": 0.11551971697585628
+        }
+      },
+      {
+        "held_rep": 3,
+        "endpoint": "6TG_mock",
+        "groups": 8474,
+        "recomputed": {
+          "mse_aa": 4.956395604188193,
+          "mse_full": 4.549010051141227,
+          "rmse_aa": 2.226296387318677,
+          "rmse_full": 2.132840840555438,
+          "rmse_difference_full_minus_aa": -0.0934555467632392,
+          "mae_aa_group_equal": 1.5678284866766121,
+          "mae_full_group_equal": 1.4793044532809312,
+          "paired_mse_difference_full_minus_aa": -0.4073855530469661,
+          "relative_rmse_gain": 0.041978034593945446,
+          "relative_mse_gain": 0.08219391379952035
+        }
+      },
+      {
+        "held_rep": 3,
+        "endpoint": "DB6_P0",
+        "groups": 8474,
+        "recomputed": {
+          "mse_aa": 4.958279974143805,
+          "mse_full": 4.530311023245235,
+          "rmse_aa": 2.2267195544441165,
+          "rmse_full": 2.1284527298592364,
+          "rmse_difference_full_minus_aa": -0.09826682458488012,
+          "mae_aa_group_equal": 1.5744257432680377,
+          "mae_full_group_equal": 1.4777432374771853,
+          "paired_mse_difference_full_minus_aa": -0.42796895089856957,
+          "relative_rmse_gain": 0.044130759254688345,
+          "relative_mse_gain": 0.08631399459698141
+        }
+      },
+      {
+        "held_rep": 3,
+        "endpoint": "mock_P0",
+        "groups": 8474,
+        "recomputed": {
+          "mse_aa": 0.17701536569491494,
+          "mse_full": 0.15744498504868973,
+          "rmse_aa": 0.42073194042634193,
+          "rmse_full": 0.3967933782823117,
+          "rmse_difference_full_minus_aa": -0.02393856214403023,
+          "mae_aa_group_equal": 0.3078411066144505,
+          "mae_full_group_equal": 0.28764923018582894,
+          "paired_mse_difference_full_minus_aa": -0.01957038064622521,
+          "relative_rmse_gain": 0.05689742052807423,
+          "relative_mse_gain": 0.11055752459339974
+        }
+      }
+    ]
+  },
+  "primary_bootstrap": {
+    "all_three_6TG_mock_bootstraps_5000_of_5000_successful": true,
+    "records": [
+      {
+        "held_rep": 1,
+        "requested_draws": 5000,
+        "successful_draws": 5000,
+        "relative_rmse_gain_95pct_ci": [
+          0.03791495943298,
+          0.045791167916687
+        ]
+      },
+      {
+        "held_rep": 2,
+        "requested_draws": 5000,
+        "successful_draws": 5000,
+        "relative_rmse_gain_95pct_ci": [
+          0.040278620187611,
+          0.04941886160223
+        ]
+      },
+      {
+        "held_rep": 3,
+        "requested_draws": 5000,
+        "successful_draws": 5000,
+        "relative_rmse_gain_95pct_ci": [
+          0.037533664894095,
+          0.046515498516571
+        ]
+      }
+    ]
+  },
+  "wt_floor_audit": {
+    "rule": "negative WT-adjusted source count is set to 0.9; raw-positive observations can also receive this floor",
+    "any_source_raw_positive_and_pre_floor_negative_and_corrected_0_9_counts_in_matched_final_cohorts": {
+      "5e-06": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "2.5e-06": {
+        "1": 0,
+        "2": 1,
+        "3": 1
+      },
+      "1e-05": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "per_tile_minimum_source_count_table_totals_and_0_9_over_N_threshold_checks": true,
+    "actual_cohort_counts_file": "floor_eligibility_audit.csv"
+  },
+  "primary_6TG_mock_results": [
+    {
+      "held_rep": 1,
+      "groups": 8547,
+      "variants": 24619,
+      "positions": 887,
+      "gain_percent": 4.18484158390788,
+      "ci_percent": [
+        3.7914959432979995,
+        4.5791167916686994
+      ]
+    },
+    {
+      "held_rep": 2,
+      "groups": 8416,
+      "variants": 23997,
+      "positions": 900,
+      "gain_percent": 4.48174380706752,
+      "ci_percent": [
+        4.0278620187611,
+        4.941886160223
+      ]
+    },
+    {
+      "held_rep": 3,
+      "groups": 8474,
+      "variants": 24156,
+      "positions": 892,
+      "gain_percent": 4.19780345939454,
+      "ci_percent": [
+        3.7533664894095002,
+        4.6515498516571
+      ]
+    }
+  ],
+  "separate_endpoint_gains_are_not_a_causal_decomposition": true,
+  "source_files": {
+    "primary_metrics.csv": {
+      "bytes": 5157,
+      "sha256": "b20297511ff8e1048677ca8c4c2d899c19c561a08e57c4a8419512cc439c6e29"
+    },
+    "attrition.csv": {
+      "bytes": 2063,
+      "sha256": "217077271aac2b2e5d0d35a9a436fb575ea773a8eaf17fa3370cd576aa5dcb58"
+    },
+    "sensitivity_metrics.csv": {
+      "bytes": 15915,
+      "sha256": "6b9d26844f0a54430993a0de76440f258333448e7f75bf7debb0965233e87f55"
+    },
+    "target_zero_missing.csv": {
+      "bytes": 733,
+      "sha256": "009da57ebc3abe8c02820a18203c0ed288b7af911d678ecf6957952e440476aa"
+    },
+    "primary_variant_predictions.csv.gz": {
+      "bytes": 24210414,
+      "sha256": "911b7ec5fd4f66a600da775ecafa38d66f65b102f048479db1127a3d8ab3fbd3"
+    },
+    "primary_group_errors.csv.gz": {
+      "bytes": 5514809,
+      "sha256": "1cb86eb6ac2f280ff6c50540781d8f45f0e3348fdf7518872b3f31b485aa1f1c"
+    },
+    "provenance.json": {
+      "bytes": 5203,
+      "sha256": "2d463c1b43624413d6b401263b22f95718a367b26892cc8d8a54b7a87572d021"
+    },
+    "summary.json": {
+      "bytes": 152856,
+      "sha256": "e41ff3bd6cba9438cfb7465cdc6c10661637f848a96ef8bca2c91404b2d485a5"
+    }
+  }
+}

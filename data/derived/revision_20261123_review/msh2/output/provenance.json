@@ -1,0 +1,102 @@
+{
+  "analysis": "MSH2 source-only replicate-held-out endpoint reconstruction",
+  "input": {
+    "geo_accession": "GSE162130",
+    "filename": "GSE162130_MSH2_HAP1_raw_count.tsv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE162nnn/GSE162130/suppl/GSE162130_MSH2_HAP1_raw_count.tsv.gz",
+    "size_bytes": 1170307,
+    "sha256": "9e315efaf715db4f906aaf5b82b4175847af819d5f65659f03e5070d710e2299",
+    "decompressed_rows_including_header": 58864,
+    "header_columns": [
+      "var_nt",
+      "var_AA",
+      "R1D_P0",
+      "R1DB6_P2",
+      "R1DB_P2",
+      "R2D_P0",
+      "R2DB6_P2",
+      "R2DB_P2",
+      "R3D_P0",
+      "R3DB6_P2",
+      "R3DB_P2",
+      "WT_plasmid"
+    ],
+    "rows_incoming_precheck_sha256_match": true
+  },
+  "script": {
+    "sha256": "ec405a341d9d068717d75ecdc2ad39e779066af7266015d825dd2deb02af563b"
+  },
+  "score_and_selection": {
+    "primary_endpoint": "log2(corrected 6TG count-table frequency / corrected mock count-table frequency)",
+    "parallel_endpoints": [
+      "6TG_mock",
+      "mock_P0",
+      "DB6_P0"
+    ],
+    "frequency_threshold": 5E-06,
+    "frequency_threshold_sensitivities": [
+      2.5E-06,
+      1E-05
+    ],
+    "pseudocount_primary_corrected_reads": 0.5,
+    "pseudocount_sensitivities_corrected_reads": [
+      0.1,
+      1.0
+    ],
+    "source_mock_qc": "source mock/P0 log2 score > -2",
+    "raw_source_nonzero_rule": "raw P0, mock, and 6-TG counts >0 in both source replicates; prevents the 0.9 WT correction floor alone from qualifying a source variant",
+    "group_rule": "at least two distinct DNA keys after source-only eligibility",
+    "target_count_used_for_eligibility_or_beta": false,
+    "target_raw_zero_retained": true,
+    "target_missing_imputed": false,
+    "jia_opposite_sign_or_AA_aggregation_filters_applied": false,
+    "WT_error_correction": "sample count minus mutation-specific WT_plasmid count scaled by same-tile sample/WT count-table total; negative adjusted counts set to 0.9",
+    "WT_correction_scope": "shared WT_plasmid reference, conditional reconstruction; not a causal/biological isolation",
+    "denominator": "sum of deposited count-table rows within tile, including the tile WT row; not a raw sequencer read total",
+    "WT_denominator": "sum of WT_plasmid counts in the same tile block and deposited row universe"
+  },
+  "validation": {
+    "outer": "leave one of three culture replicates out; source eligibility from the other two",
+    "position_folds": 5,
+    "position_fold_seed": 20261123,
+    "source_beta": "cross-replicate within-AA residual covariance / source residual variance, clipped to [0,1], fit outside each validation-position fold",
+    "baseline": "same-budget mean of two source replicate AA group means",
+    "weighting": "AA groups equally weighted; DNA variants equally weighted within group",
+    "bootstrap": {
+      "draws": 5000,
+      "seed_base": 20261124,
+      "cluster": "protein position",
+      "beta_refit": true
+    },
+    "inference_limit": "conditional within-study position uncertainty; three held-replicate rounds are overlapping internal transfer, not independent external validation"
+  },
+  "tile_layout_and_denominator": {
+    "tile_marker_rows": 21,
+    "tile_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "tile_assignment": "contiguous rows after TileXX_nt_wt through the next tile marker",
+    "denominator_definition": "sum of deposited count-table rows within tile, including the tile WT row; not a raw sequencer read total",
+    "wt_denominator_definition": "sum of WT_plasmid counts in the same tile block and deposited row universe"
+  }
+}

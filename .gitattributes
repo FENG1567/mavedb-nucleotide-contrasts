@@ -1,0 +1,7 @@
+# Preserve exact input and release-manifest bytes across add/checkout, including
+# CRLF in the original SHA-pinned MaveDB exports. Do not normalize these files.
+* -text
+*.pdf binary
+*.gz binary
+*.png binary
+*.tiff binary

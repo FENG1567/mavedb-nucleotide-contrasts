@@ -1,0 +1,43 @@
+{
+  "groups": 388,
+  "protein_positions": 367,
+  "mean_cov": 0.04850758385992742,
+  "ordinary_group_bootstrap_mean_cov_ci_5000": [
+    0.00563987632962191,
+    0.09468312001020444
+  ],
+  "one_sample_t_p_for_group_covariance": 0.03660958340593958,
+  "phi_A_primary_preserved": 0.8750878921486126,
+  "phi_A_primary_ci_preserved": [
+    0.7680030167919542,
+    0.9866439551126508
+  ],
+  "position_cluster_bootstrap_5000_seed_20261122": {
+    "mean_cov_ci": [
+      0.005519917820194366,
+      0.09578267737350889
+    ],
+    "phi_ci": [
+      0.767252052834287,
+      0.9850273288779319
+    ],
+    "direction_R_ci": [
+      0.4490861618798956,
+      0.5473731565417399
+    ],
+    "bootstrap_group_count_range": [
+      375,
+      406
+    ]
+  },
+  "rank_scale_sensitivity": {
+    "n_groups": 388,
+    "mean_cov_rank_units": 0.0020602704036582994,
+    "phi_rank_scale": 0.9598503101282168,
+    "direction_concordant": 193,
+    "direction_n": 388,
+    "direction_R": 0.49742268041237114
+  },
+  "class_control_missense_phi_sensitivity_only": 0.8758893944894707,
+  "class_control_missense_phi_is_primary": false
+}

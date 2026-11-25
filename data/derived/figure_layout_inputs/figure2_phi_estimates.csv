@@ -1,0 +1,4 @@
+estimate,phi_percent,ci_low_percent,ci_high_percent
+Primary,87.50878921486127,76.80030167919541,98.66439551126508
+Rank-scale sensitivity,95.98503101282168,,
+Class-control sensitivity,87.58893944894707,,

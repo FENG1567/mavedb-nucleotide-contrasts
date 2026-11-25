@@ -1,0 +1,26 @@
+[
+  {
+    "file": "data/derived/revision_20261122/dna_audit/input_sha256.csv",
+    "original_sha256": "d94e7a1968b45cf1c098af49dbade0bdd916dcfd1b68684248617d11171f04f8",
+    "packaged_sha256": "1d8f900a91b230cdc79d0f6b4e6b1c25ebede8111f78d7a34dd1a3ae6117d305",
+    "change": "provenance path portability only; numeric fields unchanged"
+  },
+  {
+    "file": "data/derived/revision_20261123_review/pairs/brca2_direction_summary_20261123.json",
+    "original_sha256": "b134f98b9c7e94ff2a9ab49cb37fbf6563c27101f5848907b56406a30a073067",
+    "packaged_sha256": "5fdccf90f7079d096614bd0ad341091070daa184eb80f1400f3f4808de89f8b3",
+    "change": "provenance path portability only; numeric fields unchanged"
+  },
+  {
+    "file": "data/derived/revision_20261123_review/collection/collection_group_reconciliation.json",
+    "original_sha256": "9f68ede4fb2268ce3fe53228f865df5f80caf3249ce6c5474d7b5b86eabab1d3",
+    "packaged_sha256": "677d161a7bbff280dcb03255c18038a8100e525646ddd28fcf6d1a0609a019ad",
+    "change": "provenance path portability only; numeric fields unchanged"
+  },
+  {
+    "file": "data/derived/revision_20261123_review/collection/source_provenance_per_score_set.csv",
+    "original_sha256": "c434db93348533839de5e257accae6582abd2fb1c6df1aa8c591eec1116d4bc2",
+    "packaged_sha256": "cf7299543f0f482ff344bebe8dbf0c62b4184e1e40d4d8d7af172d1135282e8d",
+    "change": "provenance path portability only; numeric fields unchanged"
+  }
+]

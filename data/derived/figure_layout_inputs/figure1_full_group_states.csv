@@ -1,0 +1,14 @@
+tier,state,state_label,groups
+Accession reference,ge2,≥2 supported,3836
+Accession reference,one,1 supported,0
+Accession reference,zero,0 supported,9205
+Accession reference,unknown_0_or_1,unknown (0 or 1),0
+Versioned request,ge2,≥2 supported,2679
+Versioned request,one,1 supported,0
+Versioned request,zero,0 supported,10362
+Versioned request,unknown_0_or_1,unknown (0 or 1),0
+Target conditional,conditional_ge2,≥2 target-compatible*,1013
+Target conditional,conditional_one,1 target-compatible*,1473
+Target conditional,zero_target_compatible_under_assumption,0 target-compatible*,4245
+Target conditional,not_assessed_target_sequence,not assessed,3836
+Target conditional,tpk1_full_construct_unresolved,TPK1 unresolved,2474

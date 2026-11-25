@@ -1,0 +1,5 @@
+pipeline,n_selected,R,mean_abs_d,R_ci_low,R_ci_high
+A_validation_dependent,77.0,1.0,0.6784202181877639,,
+B_external_lab,66.0,0.5606060606060606,1.568274213034469,,
+B_external_tech,327.0,0.5045871559633027,0.5624462673040853,,
+C_position_crossfit,11.6955,0.6103123414828691,,0.375,0.8181818181818182

@@ -1,0 +1,12 @@
+score_set,gene,target_sequence_type,target_sequence_length,target_sequence_sha256,external_identifiers_with_offsets,bare_c_variant_rows,simple_c_snv_rows,target_sequence_ref_and_codon_pass,target_ref_mismatch,target_out_of_range,other_coordinate_errors,non_snv_or_unparsed_rows,p_annotation_match_among_codon_pass,p_annotation_conflict_among_codon_pass,p_annotation_missing_among_codon_pass,p_annotation_unparseable_among_codon_pass
+urn:mavedb:00000001-c-1,CALM1,dna,450,116a0eff48587ececd25c100fa015650f3e54301c385e961dcf2ef816662362e,Ensembl:ENSG00000198668@0;RefSeq:NM_001363670.1@833;UniProt:P0DP23@0,5957,1332,1332,0,0,0,4625,1065,0,0,267
+urn:mavedb:00000005-a-5,CBS,dna,1656,0ed0d6e9099a2c31e49d9a00b1711a42be68816b798e3616fb072625d7d96f0f,Ensembl:ENSG00000160200@0;UniProt:P35520@0,10493,996,996,0,0,0,9497,608,0,0,388
+urn:mavedb:00000005-a-6,CBS,dna,1656,0ed0d6e9099a2c31e49d9a00b1711a42be68816b798e3616fb072625d7d96f0f,Ensembl:ENSG00000160200@0;UniProt:P35520@0,10802,1123,1123,0,0,0,9679,703,0,0,420
+urn:mavedb:00000054-a-1,PTEN,dna,1212,a1591b04d2492ee4888f77490e494d9fb0230418c7b20ff0b4c92f2241b9542e,UniProt:P60484@0,8012,1214,1214,0,0,0,6798,1214,0,0,0
+urn:mavedb:00000099-a-1,RHO,dna,1047,1b6edbee0cff62683fc4ee2f3b0a2d2d077b3208a7b15b33d1ffe56dde4553fe,RefSeq:NM_000539.3@0,210,188,188,0,0,0,22,173,0,0,15
+urn:mavedb:00000663-a-1,NDUFAF6,dna,1002,bcb73e368bee159721bc551723507780390153269e0966b9b0ba393d95c336aa,RefSeq:NM_152416.4@152;UniProt:Q330K2@44,5715,0,0,0,0,0,5715,0,0,0,0
+urn:mavedb:00001197-a-5,FKRP,dna,1485,a6f10092c66e2fe8023b9f239a3421b86a1e643553467ff5bfdefc2627973816,,4455,4455,4455,0,0,0,0,3259,2,0,1194
+urn:mavedb:00001198-a-1,JAG1 exons 1-7,dna,1008,68e41c27dfbc324cbf20c4bec09feca917d62648e712e3177469e2775f43662a,,2832,2832,2832,0,0,0,0,2194,0,0,638
+urn:mavedb:00001224-a-1,BRCA2,dna,10257,6a4585fe48cb975fe30eac1e509a8868df3e04d7fd0f7cbc8c01debe1e136d94,,462,462,462,0,0,0,0,462,0,0,0
+urn:mavedb:00001251-a-1,TPK1,dna,585,b1092fd542feef9ac87dae538d06ac165187f6c413018094a6a06a5b5cd4bcb4,Ensembl:ENSG00000196511@0;RefSeq:NM_022445.3@104;UniProt:Q9H3S4@0,9542,2176,1211,533,432,0,7366,844,122,0,245
+urn:mavedb:00001254-a-1,LARGE1,dna,2268,7cd9b447e1c9d351c450ca1db376ddff98f2f34c9e3e76ada6b4586f6c346533,,6804,6804,6804,0,0,0,0,5274,0,0,1530
