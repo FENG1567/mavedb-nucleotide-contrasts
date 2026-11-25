@@ -34,7 +34,7 @@ OpenSplice master download was an HTTP 403 response, so no biological splicing
 validation is claimed. ClinVar summaries are frozen coverage records, not a
 timeless online requery.
 
-The public repository is https://github.com/FENG1567/mavedb-nucleotide-contrasts; the manuscript release is v1.0.0.
+The public repository is https://github.com/FENG1567/mavedb-nucleotide-contrasts; the manuscript release is v1.0.1.
 No DOI or Zenodo record has been assigned. The historical checks above retain
 their stated scope. In a clean checkout, run `tests/verify_manifest.py` and
 `tests/verify_frozen_results.py`; the manifest excludes separately acquired

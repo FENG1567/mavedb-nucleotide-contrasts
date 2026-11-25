@@ -1,7 +1,7 @@
 # GitHub 复现材料说明
 
 本目录对应论文《Different DNA Variants, Same Amino Acid Substitution: A MaveDB Analysis Including the Pancreatic Cancer Susceptibility Gene BRCA2》的复现材料，
-公开仓库为 https://github.com/FENG1567/mavedb-nucleotide-contrasts，固定发布版本为 **v1.0.0**。自编代码采用 **MIT**；作者自有汇总结果采用
+公开仓库为 https://github.com/FENG1567/mavedb-nucleotide-contrasts，固定发布版本为 **v1.0.1**。自编代码采用 **MIT**；作者自有汇总结果采用
 **CC BY 4.0**。第三方原始数据、参考序列与外部代码不在这两个授权的覆盖范围内，
 请保留 `THIRD_PARTY.md` 和各来源记录。
 
@@ -17,6 +17,6 @@
 MSH2 主端点为 **6-TG/mock**，不是旧版本的 selected/P0。完整结果身份与适用范围见
 [科学结果约定](docs/SCIENTIFIC_CONTRACT.md)。
 
-投稿对应版本链接：https://github.com/FENG1567/mavedb-nucleotide-contrasts/releases/tag/v1.0.0。
+投稿对应版本链接：https://github.com/FENG1567/mavedb-nucleotide-contrasts/releases/tag/v1.0.1。
 当前没有分配软件 DOI 或论文 DOI。文件完整性清单只覆盖实际发布的文件，
 按来源许可单独获取的原始数据缓存不在该发布清单内。

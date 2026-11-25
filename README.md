@@ -2,7 +2,7 @@
 
 Reproducibility materials for *Different DNA Variants, Same Amino Acid Substitution: A MaveDB Analysis Including the Pancreatic Cancer Susceptibility Gene BRCA2*.
 
-Public repository: https://github.com/FENG1567/mavedb-nucleotide-contrasts. Version: [v1.0.0](https://github.com/FENG1567/mavedb-nucleotide-contrasts/releases/tag/v1.0.0). See [中文说明](README_zh.md).
+Public repository: https://github.com/FENG1567/mavedb-nucleotide-contrasts. Version: [v1.0.1](https://github.com/FENG1567/mavedb-nucleotide-contrasts/releases/tag/v1.0.1). See [中文说明](README_zh.md).
 
 This repository separates original analysis code, author-generated results and
 reused source data. **Original code: MIT. Author-generated summaries: CC BY

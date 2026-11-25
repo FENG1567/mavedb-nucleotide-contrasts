@@ -51,12 +51,17 @@ def main():
          table(D/'outputs/selection_bias_null.csv',['tau_over_sigma','pipeline']),'selection simulation')
     expected=['figure1_collection_testability','figure2_brca2_paired_contrasts',
               'figure3_msh2_controlled_endpoints','figure4_structural_selection_counterexample',
-              'figureS1_msh2_sensitivity','rna_cross_repeat_checks']
+              'Supplementary_Figure_S1_MSH2_sensitivity',
+              'Supplementary_Figure_S2_RNA_cross_repeat_checks',
+              'Supplementary_Figure_S3_collection_detail']
+    expected_pdfs={f'{name}.pdf' for name in expected}
+    observed_pdfs={path.name for path in (R/'figures').glob('*.pdf')}
+    assert observed_pdfs==expected_pdfs,('generated PDF filenames',observed_pdfs^expected_pdfs)
     for name in expected:
         assert (R/f'figures/{name}.pdf').read_bytes().startswith(b'%PDF-'),name
     report={'passed':True,'scope':['BRCA2 raw-score mapping fields','primary Phi and ordinary bootstrap CI',
                                   'all published fields of 388 BRCA2 group rows; corrected extra tie-bound diagnostics; diagnostic/estimator summaries',
-                                  'selection simulation table','six generated PDF signatures'],
+                                  'selection simulation table','seven generated PDF signatures'],
             'numeric_tolerance':1e-10}
     (R/'verification').mkdir(exist_ok=True,parents=True)
     (R/'verification/recomputed_core_comparison.json').write_text(json.dumps(report,indent=2))

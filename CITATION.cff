@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite the manuscript and the original datasets listed in THIRD_PARTY.md when using these materials."
 type: software
 title: "Code for Different DNA Variants, Same Amino Acid Substitution: A MaveDB Analysis Including the Pancreatic Cancer Susceptibility Gene BRCA2"
-version: "1.0.0"
+version: "1.0.1"
 date-released: 2026-11-25
 authors:
   - family-names: Feng
@@ -28,4 +28,4 @@ keywords:
   - MSH2
   - reproducibility
 repository-code: "https://github.com/FENG1567/mavedb-nucleotide-contrasts"
-url: "https://github.com/FENG1567/mavedb-nucleotide-contrasts/releases/tag/v1.0.0"
+url: "https://github.com/FENG1567/mavedb-nucleotide-contrasts/releases/tag/v1.0.1"

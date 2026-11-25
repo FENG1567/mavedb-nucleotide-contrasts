@@ -22,7 +22,7 @@
 
 ## 有意未做的事情
 
-- 公开仓库：https://github.com/FENG1567/mavedb-nucleotide-contrasts；固定发布版本：v1.0.0。未分配DOI或Zenodo记录。
+- 公开仓库：https://github.com/FENG1567/mavedb-nucleotide-contrasts；固定发布版本：v1.0.1。未分配DOI或Zenodo记录。
 - 正文 Word、PDF、内部审计/模拟审稿回复、WPS 日志和服务器运行日志未放入仓库。
 - MSH2 原始 GEO 文件只作为本地下载缓存存在，并被 `.gitignore` 排除；使用
   `python scripts/fetch_inputs.py --dataset MSH2_GSE162130` 获取并核验。

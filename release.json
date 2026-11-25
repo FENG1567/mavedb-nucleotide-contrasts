@@ -1,5 +1,5 @@
 {
-  "release_id": "v1.0.0",
+  "release_id": "v1.0.1",
   "manuscript_title": "Different DNA Variants, Same Amino Acid Substitution: A MaveDB Analysis Including the Pancreatic Cancer Susceptibility Gene BRCA2",
   "repository_url": "https://github.com/FENG1567/mavedb-nucleotide-contrasts",
   "doi": null,
@@ -9,7 +9,7 @@
     "third_party": "source-specific; see THIRD_PARTY.md"
   },
   "manuscript_files_included": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "date_released": "2026-11-25",
-  "release_url": "https://github.com/FENG1567/mavedb-nucleotide-contrasts/releases/tag/v1.0.0"
+  "release_url": "https://github.com/FENG1567/mavedb-nucleotide-contrasts/releases/tag/v1.0.1"
 }
